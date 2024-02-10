@@ -1,7 +1,53 @@
+@font-face {
+  font-family: "Figtree", sans-serif;
+  src: url(./assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+/* Global settings */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Figtree", sans-serif;
+  font-weight: 600;
+  background-color: hsl(47, 88%, 63%);
+}
+
+#card-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+#card{
+  width: 32.5rem;
+  height: 49.9rem;
+  background-color: white;
+}
+
+#illustration {
+  width: 27.9rem;
+  height: 20rem;
+}
+
+h2 {
+  font-weight: 800;
+}
+
+/* Footer */
+
 .attribution {
-  font-size: 11px;
+  font-size: 1.1rem;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
