@@ -11,7 +11,7 @@ My solution to the [QR code component challenge on Frontend Mentor](https://www.
     - [Design Handoff](#design-handoff)
       - [Desktop](#desktop)
       - [Mobile](#mobile)
-    - [Starting challenge style Guide](#starting-challenge-style-guide)
+    - [Challenge style Guide](#challenge-style-guide)
       - [Layout](#layout)
       - [Colors](#colors)
       - [Typography](#typography)
@@ -38,7 +38,7 @@ My solution to the [QR code component challenge on Frontend Mentor](https://www.
 
 ![](./assets/design-example/mobile-design.jpg)
 
-### Starting challenge style Guide
+### Challenge style Guide
 
 #### Layout
 
