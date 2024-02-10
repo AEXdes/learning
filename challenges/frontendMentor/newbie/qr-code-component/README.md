@@ -19,7 +19,7 @@ My solution to the [QR code component challenge on Frontend Mentor](https://www.
       - [Font](#font)
   - [My process](#my-process)
     - [Built with](#built-with)
-    - [test](#test)
+    - [Test](#test)
 
 
 ## Overview
@@ -75,7 +75,7 @@ The designs were created to the following widths:
 - Flexbox
 - Mobile-first workflow
 
-### test
+### Test
 Tested with Google Chrome Lighthouse:
 
 ![](./assets/screens/lighthouse-test.jpg)
