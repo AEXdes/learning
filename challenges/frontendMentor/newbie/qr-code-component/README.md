@@ -20,6 +20,7 @@ My solution to the [QR code component challenge on Frontend Mentor](https://www.
   - [My process](#my-process)
     - [Built with](#built-with)
     - [Test](#test)
+      - [Observations](#observations)
 
 
 ## Overview
@@ -79,3 +80,6 @@ The designs were created to the following widths:
 Tested with Google Chrome Lighthouse:
 
 ![](./assets/screens/lighthouse-test.jpg)
+
+#### Observations
+The paragraph's color style provided by the challenge do not offer optimal contrast ratio for a good accessible experience.
