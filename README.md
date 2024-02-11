@@ -7,4 +7,5 @@ This repository is to keep track of all the projects I undertake during my learn
 www.frontendmentor.io
 #### [Newbie level](./challenges/frontendMentor/newbie)
   - [QR Code Component](./challenges/frontendMentor/newbie/qr-code-component) ✅
-  - Blog Preview Card 🚧
+  - [Blog Preview Card](./challenges/frontendMentor/newbie/blog-preview-card/) ✅
+  - Social links profile 🚧
