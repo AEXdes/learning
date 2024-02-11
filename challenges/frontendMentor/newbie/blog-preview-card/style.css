@@ -87,11 +87,19 @@ h3 {
   color: var(--Black);
 }
 
+#card-content-container a {
+  text-decoration: none;
+}
+
 h1 {
   margin-bottom: 1.6rem;
   font-weight: 800;
   color: var(--Black);
   font-size: 1.7rem;
+}
+
+#card-content-container a h1:hover {
+  color: var(--Yellow);
 }
 
 #card-description {
