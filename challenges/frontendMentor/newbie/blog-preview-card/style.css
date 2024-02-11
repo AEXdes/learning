@@ -1,6 +1,9 @@
 @font-face {
   font-family: "Figtree", sans-serif;
-  src: url(./assets/fonts/Figtree-VariableFont_wght.ttf);
+  src: url(./assets/fonts/Figtree-VariableFont_wght.ttf) format(ttf),
+    url(./assets/fonts/Figtree-Italic-VariableFont_wght.ttf) format(ttf),
+    url(./assets/fonts/static/Figtree-ExtraBold.ttf),
+    url(./assets/fonts/static/Figtree-SemiBold.ttf);
 }
 
 /* Variables */
@@ -33,11 +36,13 @@ body {
   height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 #card {
   width: 32.5rem;
-  height: 49.9rem;
+  height: 47rem;
+  padding-top: 2rem;
   background-color: var(--White);
   border-radius: 2rem;
 }
@@ -49,9 +54,8 @@ body {
 }
 
 #card-illustration-container img {
-  width: 27.9rem;
-  height: 20rem;
-  border-radius: 5rem;
+  width: 29rem;
+  border-radius: 1rem;
 }
 
 #card-content-container {
@@ -61,7 +65,7 @@ body {
 #card-tag {
   width: 7.3rem;
   height: 2.6rem;
-  margin-bottom: 1.6rem;
+  margin: 2.3rem 0 1.8rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,7 +74,7 @@ body {
 }
 
 #card-tag h2 {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 800;
   color: var(--Black);
   text-align: center;
@@ -85,14 +89,15 @@ h1 {
   margin-bottom: 1.6rem;
   font-weight: 800;
   color: var(--Black);
-  font-size: 1.6rem;
+  font-size: 1.7rem;
 }
 
 #card-description {
-  margin-bottom: 1.6rem;
-  font-size: 1.1rem;
-  letter-spacing: 0.1rem;
-  line-height: 1.9rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  font-size: 1.3rem;
+  /* letter-spacing: 0.05rem; */
+  line-height: 2.3rem;
   color: var(--Grey);
 }
 
