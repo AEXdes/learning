@@ -28,7 +28,28 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  font-family: var(--mainFont);
+  background-color: var(--darkGrey);
+}
+
 /* Main */
+
+#card-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#card {
+  width: 38.4rem;
+  height: 61rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--grey);
+}
 
 
 /* Footer */
