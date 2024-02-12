@@ -1,0 +1,41 @@
+/* Fonts */
+@font-face {
+  font-family: "Inter", sans-serif;
+  src: url(./assets/fonts/Inter-VariableFont_slnt\wght.ttf);
+}
+
+/* Variables */
+:root {
+  /* Colors */
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 20%);
+  --darkGrey: hsl(0, 0%, 12%);
+  --offBlack: hsl(0, 0%, 8%);
+  --blue: hsl(228, 45%, 44%);
+  /* Fonts */
+  --mainFont: "Inter", sans-serif;
+}
+
+/* Global Settings */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Main */
+
+
+/* Footer */
+.attribution {
+  font-size: 1.1rem;
+  text-align: center;
+}
+.attribution a {
+  color: var(--blue);
+}
