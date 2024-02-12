@@ -7,7 +7,7 @@ My solution to the [QR code component challenge on Frontend Mentor](https://www.
 - [Frontend Mentor - QR code component solution](#frontend-mentor---qr-code-component-solution)
   - [Table of contents](#table-of-contents)
   - [Overview](#overview)
-    - [Screenshot](#screenshot)
+    - [My solution screenshot](#my-solution-screenshot)
     - [Design Handoff](#design-handoff)
       - [Desktop](#desktop)
       - [Mobile](#mobile)
@@ -19,13 +19,13 @@ My solution to the [QR code component challenge on Frontend Mentor](https://www.
       - [Font](#font)
   - [My process](#my-process)
     - [Built with](#built-with)
-    - [Test](#test)
+    - [Lighthouse Test](#lighthouse-test)
       - [Observations](#observations)
 
 
 ## Overview
 
-### Screenshot
+### My solution screenshot
 
 ![](./assets/screens/qr-code-component_index.html.png)
 
@@ -76,10 +76,9 @@ The designs were created to the following widths:
 - Flexbox
 - Mobile-first workflow
 
-### Test
-Tested with Google Chrome Lighthouse:
+### Lighthouse Test
 
 ![](./assets/screens/lighthouse-test.jpg)
 
 #### Observations
-The paragraph's color style provided by the challenge do not offer optimal contrast ratio for a good accessible experience.
+- The paragraph's color style provided by the challenge do not offer optimal contrast ratio for a good accessible experience.

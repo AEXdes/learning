@@ -7,7 +7,7 @@ This is a solution to the [Blog preview card challenge on Frontend Mentor](https
 - [Frontend Mentor - Blog preview card solution](#frontend-mentor---blog-preview-card-solution)
   - [Table of contents](#table-of-contents)
   - [Overview](#overview)
-    - [Screenshot](#screenshot)
+    - [My solution screenshot](#my-solution-screenshot)
     - [Design Handoff](#design-handoff)
       - [Desktop](#desktop)
       - [Mobile](#mobile)
@@ -21,13 +21,13 @@ This is a solution to the [Blog preview card challenge on Frontend Mentor](https
       - [Font](#font)
   - [My process](#my-process)
     - [Built with](#built-with)
-    - [Test](#test)
+    - [Lighthouse Test](#lighthouse-test)
       - [Observations](#observations)
 
 
 ## Overview
 
-### Screenshot
+### My solution screenshot
 
 ![](./assets/screen/screenshot.jpg)
 
@@ -84,10 +84,9 @@ The designs were created to the following widths:
 - Flexbox
 - Mobile-first workflow
 
-### Test
-Tested with Google Chrome Lighthouse:
+### Lighthouse Test
 
 ![](./assets/screen/lighthouse-test.jpg)
 
 #### Observations
-The paragraph's color style provided by the challenge do not offer optimal contrast ratio for a good accessible experience.
+- The paragraph's color style provided by the challenge do not offer optimal contrast ratio for a good accessible experience.

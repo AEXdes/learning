@@ -7,7 +7,7 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 - [Frontend Mentor - Social links profile solution](#frontend-mentor---social-links-profile-solution)
   - [Table of contents](#table-of-contents)
   - [Overview](#overview)
-    - [Screenshot](#screenshot)
+    - [My solution screenshot](#my-solution-screenshot)
     - [Design Handoff](#design-handoff)
       - [Desktop](#desktop)
       - [Mobile](#mobile)
@@ -21,13 +21,13 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
         - [Font](#font)
   - [My process](#my-process)
     - [Built with](#built-with)
-    - [Test](#test)
+    - [Lighthouse Test](#lighthouse-test)
       - [Observations](#observations)
 
 
 ## Overview
 
-### Screenshot
+### My solution screenshot
 
 ![](./assets/screens/social-links-profile.jpg)
 
@@ -84,10 +84,9 @@ The designs were created to the following widths:
 - Flexbox
 - Mobile-first workflow
 
-### Test
-Tested with Google Chrome Lighthouse:
+### Lighthouse Test
 
 ![](./assets/screens/lighthouse-test.jpg)
 
 #### Observations
-The card's background color style provided by the challenge do not offer optimal contrast ratio for a good accessible experience.
+- The card's background color style provided by the challenge do not offer optimal contrast ratio for a good accessible experience.
