@@ -131,7 +131,6 @@ main #index .index-button a:hover {
 
 /* Media Breaks */
 @media only screen and (min-width: 768px) {
-
   main {
     margin-top: 10rem;
     padding-inline: 10rem;
