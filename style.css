@@ -33,7 +33,7 @@ header {
 }
 
 header img {
-  width: 100%;
+  width: 30rem;
 }
 
 main {
@@ -65,6 +65,15 @@ main #nav nav a:hover {
   text-decoration: underline;
 }
 
+#description {
+  margin-top: 3rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
 main #index {
   margin-top: 5rem;
   display: flex;
@@ -85,6 +94,14 @@ main #index hr {
   border: 0.1rem solid var(--white);
 }
 
+main #index h2 {
+  margin-top: 3rem;
+  font-size: 2rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
 main #index #index-button-container {
   display: flex;
   flex-direction: column;
@@ -103,7 +120,7 @@ main #index .index-button a {
   align-items: center;
   text-decoration: none;
   color: var(--white);
-  font-size: 2rem;
+  font-size: 1.3rem;
   border-radius: 1rem;
 }
 
@@ -114,12 +131,18 @@ main #index .index-button a:hover {
 
 /* Media Breaks */
 @media only screen and (min-width: 768px) {
+
   main {
     margin-top: 10rem;
     padding-inline: 10rem;
   }
+
   main #nav nav {
     display: block;
+  }
+
+  #description {
+    text-align: left;
   }
 
   main #index #index-button-container {
