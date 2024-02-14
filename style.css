@@ -28,8 +28,7 @@ body {
 
 header {
   margin-top: 5rem;
-  display: flex;
-  justify-content: center;
+  padding-left: 10rem;
 }
 
 main {
