@@ -9,6 +9,7 @@
   --very-dark-blue: hsl(212, 21%, 14%);
   --dark-grayish-blue: hsl(228, 12%, 48%);
   --white: hsl(0, 0%, 100%);
+  --Blue: hsl(228, 45%, 44%);
 }
 
 /* GLobal Settings */
@@ -24,7 +25,6 @@ html {
 
 body {
   background-color: var(--cream);
-  font-family: "Montserrat", sans-serif;
 }
 
 /* Main */
@@ -38,7 +38,6 @@ main #card-container {
 
 #card-container #card {
   width: 30rem;
-  height: 45rem;
   display: grid;
   grid-template-rows: 1fr 1fr;
   border-radius: 1rem;
@@ -56,6 +55,7 @@ main #card-container {
 }
 
 #card-container #card #card-content h3 {
+  font-family: "Montserrat", sans-serif;
   font-size: 0.9rem;
   font-weight: 500;
   text-transform: uppercase;
@@ -65,14 +65,58 @@ main #card-container {
 
 #card-container #card #card-content h1 {
   font-family: "Fraunces", serif;
-  font-size: 2.6rem;
+  font-size: 2.8rem;
+  line-height: 2.6rem;
 }
+
+#card-container #card #card-content p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  color: var(--dark-grayish-blue);
+}
+
+#card-container #card #card-content #card-price {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+#card-container #card #card-content #card-price h2 {
+  font-family: "Fraunces", serif;
+  font-size: 2.6rem;
+  color: var(--dark-cyan);
+}
+
+#card-container #card #card-content #card-price p {
+  text-decoration: line-through;
+}
+
+#card-container #card #card-content button {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-family: "Montserrat", sans-serif;
+  color: var(--white);
+  font-weight: 500;
+  font-size: 1.2rem;
+  background-color: var(--dark-cyan);
+  border-radius: 0.6rem;
+  border: none;
+}
+
+
 
 /* Footer */
 .attribution {
   font-size: 1.1rem;
   text-align: center;
 }
+
 .attribution a {
   color: var(--Blue);
 }
