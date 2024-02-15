@@ -25,6 +25,7 @@ html {
 
 body {
   background-color: var(--cream);
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Main */
@@ -68,10 +69,10 @@ main #card-container {
   font-family: "Fraunces", serif;
   font-size: 2.8rem;
   line-height: 2.7rem;
+  color: var(--very-dark-blue);
 }
 
 #card-container #card #card-content #main-paragraph {
-  padding-right: 1rem;
   margin-bottom: 1.6rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -100,7 +101,7 @@ main #card-container {
   color: var(--dark-grayish-blue);
 }
 
-#card-container #card #card-content button {
+#card-container #card #card-content a {
   width: 100%;
   height: 4rem;
   display: flex;
@@ -111,16 +112,19 @@ main #card-container {
   color: var(--white);
   font-weight: 600;
   font-size: 1.2rem;
+  text-decoration: none;
   background-color: var(--dark-cyan);
   border-radius: 0.6rem;
   border: none;
 }
 
-#card-container #card #card-content button img {
-  width: 1.2rem;
+#card-container #card #card-content a:hover {
+  background-color: var(--very-dark-blue);
 }
 
-
+#card-container #card #card-content a img {
+  width: 1.2rem;
+}
 
 /* Footer */
 .attribution {
@@ -130,6 +134,41 @@ main #card-container {
 
 .attribution a {
   color: var(--Blue);
+}
+
+/* Media Queries */
+@media (min-width: 640px) {
+  #card-container #card {
+    width: 50rem;
+    height: auto;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #card-container #card #card-content {
+    padding: 3rem;
+  }
+
+  #card-container #card #card-img img {
+    height: 100%;
+    border-radius: 1rem 0 0 1rem;
+  }
+
+  #card-container #card #card-content h3 {
+    margin-bottom: 1.4rem;
+  }
+
+  #card-container #card #card-content h1 {
+    margin-bottom: 2rem;
+  }
+
+  #card-container #card #card-content #main-paragraph {
+    margin-right: 0;
+    margin-bottom: 2.3rem;
+    font-size: 1.1rem;
+  }
+  #card-container #card #card-content #card-price {
+    margin-bottom: 2.4rem;
+  }
 }
 
 /* // <uniquifier>: Use a uniquifier for the class name
