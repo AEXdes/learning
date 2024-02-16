@@ -1,8 +1,46 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 
+/* // <uniquifier>: Use a uniquifier for the class name
+// <weight>: Use a value from 100 to 900
+
+.outfit-<uniquifier> {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+/* Variables */
 :root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --bg-dark-blue: hsl(217, 54%, 11%);
+  --card-dark-blue: hsl(216, 50%, 16%);
+  --line-dark-blue: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
   --blue: hsl(228, 45%, 44%);
-
 }
+
+/* Global Settings */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: var(--bg-dark-blue);
+  color: var(--white);
+}
+
+/* Main */
+
 /* Footer */
 .attribution {
   font-size: 1.1rem;
@@ -11,3 +49,5 @@
 .attribution a {
   color: var(--blue);
 }
+
+
