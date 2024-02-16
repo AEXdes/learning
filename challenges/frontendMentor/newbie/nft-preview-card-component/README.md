@@ -22,7 +22,6 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
   - [My process](#my-process)
     - [Built with](#built-with)
     - [Lighthouse Test](#lighthouse-test)
-      - [Observations](#observations)
 
 ---
 
@@ -90,6 +89,3 @@ The designs were created to the following widths:
 ### Lighthouse Test
 
 ![](./assets/screens/lighthouse-test.jpg)
-
-#### Observations
-- The card's background color style provided by the challenge do not offer optimal contrast ratio for a good accessible experience.
