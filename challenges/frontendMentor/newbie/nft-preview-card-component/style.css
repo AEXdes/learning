@@ -1,16 +1,6 @@
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 
-/* // <uniquifier>: Use a uniquifier for the class name
-// <weight>: Use a value from 100 to 900
-
-.outfit-<uniquifier> {
-  font-family: "Outfit", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-} */
-
 /* Variables */
 :root {
   --soft-blue: hsl(215, 51%, 70%);
