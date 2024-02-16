@@ -41,12 +41,110 @@ body {
 
 /* Main */
 
+main #card {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main #card #card-container {
+  width: 32.5rem;
+  padding: 2.5rem;
+  background-color: var(--card-dark-blue);
+  border-radius: 1.3rem;
+}
+
+main #card #card-container #card-image {
+  width: 100%;
+}
+
+main #card #card-container #card-image #eye-icon {
+  display: none;
+}
+
+main #card #card-container #card-image #equilibrium-img {
+  width: 100%;
+  border-radius: 0.8rem;
+}
+
+main #card #card-container #card-content a {
+  text-decoration: none;
+}
+
+main #card #card-container #card-content a h1 {
+  font-size: 2.1rem;
+  font-weight: 600;
+  color: var(--white);
+}
+
+main #card #card-container #card-content #card-description {
+  font-size: 1.6rem;
+  font-weight: 200;
+  color: var(--soft-blue);
+  line-height: 2.4rem;
+}
+
+main #card #card-container #card-content #card-information {
+  display: flex;
+  justify-content: space-between;
+}
+
+main #card #card-container #card-content #card-ethereum {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+main #card #card-container #card-content #card-ethereum span {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--cyan);
+}
+
+main #card #card-container #card-content #card-timer {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+main #card #card-container #card-content #card-timer span {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--soft-blue);
+}
+
+main #card #card-container #card-content hr {
+  border: 0.06rem solid var(--line-dark-blue);
+}
+
+main #card #card-container #card-content #card-profile {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+main #card #card-container #card-content #card-profile img {
+  width: 3rem;
+  border: 0.09rem solid var(--white);
+  border-radius: 100%;
+}
+
+main #card #card-container #card-content #card-profile p {
+  font-size: 1.6rem;
+  color: var(--soft-blue);
+}
+
+main #card #card-container #card-content #card-profile a {
+  color: var(--white);
+}
+
 /* Footer */
-.attribution {
+footer .attribution {
   font-size: 1.1rem;
   text-align: center;
 }
-.attribution a {
+footer .attribution a {
   color: var(--blue);
 }
 
