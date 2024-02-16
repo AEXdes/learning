@@ -60,7 +60,6 @@ main #card #card-container #card-image {
   width: 100%;
 }
 
-
 main #card #card-container #card-image #equilibrium-img {
   width: 100%;
   border-radius: 0.8rem;
@@ -80,7 +79,7 @@ main #card #card-container #card-image #card-image-eye-icon {
 
 main #card #card-container #card-image #card-image-eye-icon:hover {
   opacity: 1;
-  background-color:hsla(178, 100%, 50%, 0.5);
+  background-color: hsla(178, 100%, 50%, 0.5);
   border-radius: 0.8rem;
 }
 
@@ -146,6 +145,7 @@ main #card #card-container #card-content #card-timer span {
 }
 
 main #card #card-container #card-content hr {
+  margin-top: 0.5rem;
   border: 0.06rem solid var(--line-dark-blue);
 }
 
