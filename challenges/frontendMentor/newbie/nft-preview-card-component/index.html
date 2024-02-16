@@ -1,33 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The AEX version of the Frontend Mentor challenge: NFT Preview Card Component Challenge"
+    />
+    <meta name="”robots”" content="index, follow" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | NFT preview card component</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <section id="card">
+        <div id="card-container">
+          <div id="card-image">
+            <img
+              id="eye-icon"
+              src="./assets/images/icon-view.svg"
+              alt="eye icon"
+            />
+            <a href="#"
+              ><img
+                id="equilibrium-img"
+                src="./assets/images/image-equilibrium.jpg"
+                alt="equilibrium image"
+            /></a>
+          </div>
+          <div id="card-content">
+            <a href="#"><h1>Equilibrium #3429</h1></a>
+            <p>Our Equilibrium collection promotes balance and calm.</p>
+            <div id="card-ethereum">
+              <img
+                src="./assets/images/icon-ethereum.svg"
+                alt="ethereum icon"
+              />
+              <span>0.041 ETH</span>
+            </div>
+            <div id="card-timer">
+              <img src="./assets/images/icon-clock.svg" alt="clock icon" />
+              <span>3 days left</span>
+            </div>
+            <hr />
+            <div id="card-profile">
+              <img src="./assets/images/image-avatar.png" alt="avatar image" />
+              <p>Creation of <a href="#">Jules Wyvern</a></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | NFT preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Equilibrium #3429
-
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <!-- Footer information -->
+    <footer>
+      <section class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/AEXdes" target="_blank">AEX</a>.
+      </section>
+    </footer>
+  </body>
 </html>
