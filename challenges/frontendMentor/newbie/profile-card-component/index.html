@@ -1,35 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The AEX version of Profile Card Component Challenge"
+    />
+    <meta name="robots" content="index, follow" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Profile card component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  Victor Crest
-  26
-  London
+    <title>Frontend Mentor | Profile card component</title>
 
-  80K
-  Followers
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section id="card">
+        <div id="card-container">
+          <div id="card-pattern">
+            <img src="./assets/images/bg-pattern-card.svg" alt="pattern">
+          </div>
+          <div id="card-profile-img">
+            <img src="./assets/images/image-victor.jpg" alt="picture of victor crest">
+          </div>
+          <div id="card-content">
+            <h1>Victor Crest <span>26</span></h1>
+            <h2>London</h2>
+          </div>
+          <div id="card-data">
+            <div id="card-data-followers">
+              <p><b>80K</b> Followers</p>
+            </div>
+            <div id="card-data-likes">
+              <p><b>803K</b>Likes</p>
+            </div>
+            <div id="card-data-photos">
+              <p><b>1.4K</b>Photos</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-  803K
-  Likes
-
-  1.4K
-  Photos
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <!-- Footer information -->
+    <footer>
+      <section class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/AEXdes" target="_blank">AEX</a>.
+      </section>
+    </footer>
+  </body>
 </html>

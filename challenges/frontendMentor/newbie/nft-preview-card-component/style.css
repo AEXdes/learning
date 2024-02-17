@@ -71,6 +71,7 @@ main #card #card-container #card-image #card-image-eye-icon:hover {
   opacity: 1;
   background-color: hsla(178, 100%, 50%, 0.5);
   border-radius: 0.8rem;
+  cursor: pointer;
 }
 
 main #card #card-container #card-image #card-image-eye-icon img {
