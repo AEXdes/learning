@@ -1,6 +1,162 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+
+/* 
+// <uniquifier>: Use a uniquifier for the class name
+// <weight>: Use a value from 300 to 900
+
+.red-hat display-<uniquifier> {
+  font-family: "Red Hat Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+/* Variables */
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+  --blue: hsl(228, 45%, 44%);
+}
+
+/* Global Settings */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  text-align: center;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--pale-blue);
+}
+
+/* Main */
+main #card {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main #card #card-container {
+  width: 32.7rem;
+  background-color: white;
+  border-radius: 1.8rem;
+}
+
+main #card #card-container #card-img img {
+  width: 100%;
+  border-radius: 1.8rem 1.8rem 0 0;
+}
+
+main #card #card-container #card-content {
+  padding: 2rem;
+}
+
+main #card #card-container #card-content h1 {
+  font-size: 1.8rem;
+  font-weight: 900;
+  letter-spacing: 0.05rem;
+  color: var(--dark-blue);
+}
+
+main #card #card-container #card-content #card-description {
+  font-size: 1.3rem;
+  padding-inline: 2.1rem;
+  line-height: 2.3rem;
+  color: var(--desaturated-blue);
+}
+
+main #card #card-container #card-content #card-plan {
+  display: flex;
+  padding: 1.6rem;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--very-pale-blue);
+  border-radius: 1rem;
+}
+
+main #card #card-container #card-content #card-plan img {
+  width: 3.8rem;
+}
+
+main #card #card-container #card-content #card-plan-data {
+  display: flex;
+  margin-right: 6rem;
+  flex-direction: column;
+  align-items: start;
+}
+
+main #card #card-container #card-content #card-plan-data h2 {
+  font-size: 1.3rem;
+  font-weight: 900;
+  margin-bottom: 0.3rem;
+}
+
+main #card #card-container #card-content #card-plan-data p {
+  color: var(--desaturated-blue);
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+}
+
+main #card #card-container #card-content #card-plan a {
+  font-weight: 700;
+}
+
+main #card #card-container #card-content #card-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main #card #card-container #card-content #card-btns a {
+  text-decoration: none;
+}
+
+main #card #card-container #card-content #card-btns #card-primary-btn {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: var(--bright-blue);
+  border-radius: 1rem;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+main #card #card-container #card-content #card-btns #card-secundary-btn {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--desaturated-blue);
+  font-weight: 700;
+  font-size: 1.3rem;
+}
 
 
+
+/* BG */
 
 /* Footer */
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: var(--blue);
+}
