@@ -123,7 +123,6 @@ main #card #card-container #card-content #card-plan a {
   color: var(--bright-blue);
 }
 
-
 main #card #card-container #card-content #card-plan a:hover {
   opacity: 0.7;
   text-decoration: none;
@@ -138,8 +137,6 @@ main #card #card-container #card-content #card-btns {
 main #card #card-container #card-content #card-btns a {
   text-decoration: none;
 }
-
-
 
 main #card #card-container #card-content #card-btns #card-primary-btn {
   width: 100%;
@@ -174,9 +171,23 @@ main #card #card-container #card-content #card-btns #card-secundary-btn:hover {
   color: var(--dark-blue);
 }
 
-
-
 /* BG */
+#mobile-ptrn {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#desktop-ptrn {
+  display: none;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
 
 /* Footer */
 .attribution {
@@ -185,4 +196,14 @@ main #card #card-container #card-content #card-btns #card-secundary-btn:hover {
 }
 .attribution a {
   color: var(--blue);
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  #mobile-ptrn {
+    display: none;
+  }
+  #desktop-ptrn {
+    display: block;
+  }
 }
