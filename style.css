@@ -99,17 +99,15 @@ main #index h2 {
 }
 
 main #index #index-button-container {
+  margin-top: 3rem;
   display: flex;
   flex-direction: column;
-}
-
-main #index .index-button {
-  margin-top: 3rem;
 }
 
 main #index .index-button a {
   width: 18.5rem;
   height: 8.1rem;
+  padding: 2rem;
   display: flex;
   justify-content: center;
   border: 0.3rem solid var(--white);
@@ -149,7 +147,8 @@ main #index .index-button a:hover {
   main #index #index-button-container {
     display: flex;
     flex-direction: row;
-    gap: 3rem;
+    flex-wrap: wrap;
+    gap: 2rem;
   }
 
   main #index {
