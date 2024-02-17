@@ -34,10 +34,12 @@ html {
 }
 
 body {
+  position: relative;
   font-family: "Kumbh Sans", sans-serif;
   font-weight: 400;
   color: var(--very-dark-desaturated-blue);
   background-color: var(--dark-cyan);
+  overflow: hidden;
 }
 
 /* Main */
@@ -53,11 +55,9 @@ main #card {
   width: 32.5rem;
   background-color: white;
   border-radius: 1.3rem;
-  box-shadow: 0 1.5rem 6rem 0.5rem hsl(229, 23%, 23%, 50%);;
+  box-shadow: 0 1.5rem 6rem 0.5rem hsl(229, 23%, 23%, 50%);
 }
 
-main #card #card-container {
-}
 main #card #card-container #card-pattern img {
   width: 100%;
   border-radius: 1rem 1rem 0 0;
@@ -138,30 +138,35 @@ main #card #card-container #card-data #card-data-followers p,
 }
 
 /* Background */
-
-#main-bg {
-  height: 100vh;
-  width: 100vh;
+#bg-top {
+  height: 978px;
+  width: 978px;
+  position: absolute;
+  top: -70%;
+  left: -140%;
+  background-image: url("./assets/images/bg-pattern-top.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
-#main-bg #circulo-bg1 {
-  width: 100%;
-  top: -28%;
-  left: -42%;
+#bg-bottom {
+  height: 978px;
+  width: 978px;
   position: absolute;
-  z-index: -1;
-}
-
-#main-bg #circulo-bg2 {
-  width: 100%;
-  top: 55%;
-  left: 45%;
-  position: absolute;
-  z-index: -1;
-  background-size: cover;
+  top: 44%;
+  left: 40%;
+  background-image: url("./assets/images/bg-pattern-bottom.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 /* Footer */
+footer {
+  position: absolute;
+  top: 96%;
+  left: 27%;
+}
+
 footer .attribution {
   font-size: 1.1rem;
   text-align: center;
@@ -170,16 +175,54 @@ footer .attribution a {
   color: var(--blue);
 }
 
-/* Media Query */
-@media (min-width: 768px) {
-  #main-bg #circulo-bg1 {
-    width: 50%;
-    top: -28%;
-    left: -42%;
+@media (min-width: 640px) {
+  footer {
+    left: 37%;
   }
-  
-  #main-bg #circulo-bg2 {
-    width: 50%;
+  #bg-top {
+    top: -70%;
+    left: -98%;
+  }
+  #bg-bottom {
+    top: 50%;
+    left: 45%;
+  }
+}
+@media (min-width: 768px) {
+  footer {
+    left: 35%;
+  }
+  #bg-top {
+    top: -65%;
+    left: -55%;
+  }
+  #bg-bottom {
+    top: 50%;
+    left: 45%;
+  }
+}
+@media (min-width: 1024px) {
+  footer {
+    left: 39%;
+  }
+  #bg-top {
+    top: -60%;
+    left: -40%;
+  }
+  #bg-bottom {
+    top: 50%;
+    left: 45%;
+  }
+}
+@media (min-width: 1280px) {
+  footer {
+    left: 42%;
+  }
+  #bg-top {
+    top: -70%;
+    left: -20%;
+  }
+  #bg-bottom {
     top: 55%;
     left: 45%;
   }
