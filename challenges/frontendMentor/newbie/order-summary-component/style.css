@@ -69,7 +69,7 @@ main #card #card-container #card-content {
 
 main #card #card-container #card-content h1 {
   margin-top: 0.8rem;
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   font-weight: 900;
   letter-spacing: 0.05rem;
   color: var(--dark-blue);
@@ -94,7 +94,7 @@ main #card #card-container #card-content #card-plan {
 }
 
 main #card #card-container #card-content #card-plan img {
-  width: 3.8rem;
+  width: 4rem;
 }
 
 main #card #card-container #card-content #card-plan-data {
@@ -107,11 +107,12 @@ main #card #card-container #card-content #card-plan-data {
 main #card #card-container #card-content #card-plan-data h2 {
   font-size: 1.3rem;
   font-weight: 900;
+  color: var(--dark-blue);
 }
 
 main #card #card-container #card-content #card-plan-data p {
   color: var(--desaturated-blue);
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 500;
   letter-spacing: 0.05rem;
 }
@@ -119,6 +120,13 @@ main #card #card-container #card-content #card-plan-data p {
 main #card #card-container #card-content #card-plan a {
   font-weight: 700;
   font-size: 1.2rem;
+  color: var(--bright-blue);
+}
+
+
+main #card #card-container #card-content #card-plan a:hover {
+  opacity: 0.7;
+  text-decoration: none;
 }
 
 main #card #card-container #card-content #card-btns {
@@ -131,9 +139,11 @@ main #card #card-container #card-content #card-btns a {
   text-decoration: none;
 }
 
+
+
 main #card #card-container #card-content #card-btns #card-primary-btn {
   width: 100%;
-  height: 4.5rem;
+  height: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -145,15 +155,23 @@ main #card #card-container #card-content #card-btns #card-primary-btn {
   box-shadow: 0 1.4rem 1.4rem hsla(245, 75%, 52%, 20%);
 }
 
+main #card #card-container #card-content #card-btns #card-primary-btn:hover {
+  opacity: 0.7;
+}
+
 main #card #card-container #card-content #card-btns #card-secundary-btn {
   width: 100%;
-  height: 4.5rem;
+  height: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
   color: var(--desaturated-blue);
   font-weight: 900;
   font-size: 1.3rem;
+}
+
+main #card #card-container #card-content #card-btns #card-secundary-btn:hover {
+  color: var(--dark-blue);
 }
 
 
