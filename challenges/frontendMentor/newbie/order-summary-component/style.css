@@ -68,6 +68,7 @@ main #card #card-container #card-content {
 }
 
 main #card #card-container #card-content h1 {
+  margin-top: 0.8rem;
   font-size: 1.8rem;
   font-weight: 900;
   letter-spacing: 0.05rem;
@@ -98,7 +99,7 @@ main #card #card-container #card-content #card-plan img {
 
 main #card #card-container #card-content #card-plan-data {
   display: flex;
-  margin-right: 6rem;
+  margin-right: 5rem;
   flex-direction: column;
   align-items: start;
 }
@@ -141,6 +142,7 @@ main #card #card-container #card-content #card-btns #card-primary-btn {
   border-radius: 1rem;
   font-weight: 700;
   font-size: 1.3rem;
+  box-shadow: 0 1.4rem 1.4rem hsla(245, 75%, 52%, 20%);
 }
 
 main #card #card-container #card-content #card-btns #card-secundary-btn {
