@@ -15,7 +15,6 @@
 
 /* Variables */
 :root {
-  --blue: hsl(228, 45%, 44%);
   --dark-cyan: hsl(185, 75%, 39%);
   --very-dark-desaturated-blue: hsl(229, 23%, 23%);
   --dark-grayish-blue: hsl(227, 10%, 46%);
@@ -37,13 +36,116 @@ body {
   font-family: "Kumbh Sans", sans-serif;
   font-weight: 400;
   color: var(--very-dark-desaturated-blue);
+  background-color: var(--dark-cyan);
 }
 
-/* Footer */
-.attribution {
-  font-size: 11px;
+/* Main */
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main #card {
+  position: relative;
+  width: 32.5rem;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+main #card #card-container {
+}
+main #card #card-container #card-pattern img {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+main #card #card-container #card-profile-img {
+  position: absolute;
+  top: 21%;
+  left: 33%;
+}
+
+main #card #card-container #card-profile-img img {
+  border-radius: 100%;
+  border: 0.6rem solid white;
+}
+
+main #card #card-container #card-content {
+  margin-top: 7rem;
   text-align: center;
 }
-.attribution a {
-  color: var(--blue);
+
+main #card #card-container #card-content h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+main #card #card-container #card-content span {
+  margin-left: 0.5rem;
+  font-weight: 400;
+  color: var(--dark-grayish-blue);
+}
+
+main #card #card-container #card-content h2 {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: var(--dark-grayish-blue);
+}
+
+main #card #card-container #card-content hr {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  border: 0.001rem solid var(--Dark-gray);
+}
+
+main #card #card-container #card-data {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+main #card #card-container #card-data #card-data-followers,
+#card-data-likes,
+#card-data-photos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main #card #card-container #card-data #card-data-followers b,
+#card-data-likes b,
+#card-data-photos b {
+  font-size: 1.8rem;
+}
+
+main #card #card-container #card-data #card-data-followers p,
+#card-data-likes p,
+#card-data-photos p {
+  margin-top: 0.6rem;
+  font-size: 1rem;
+  letter-spacing: 0.08rem;
+  color: var(--Dark-gray);
+}
+
+/* Background */
+
+#main-bg #circulo-bg1 {
+  width: 100%;
+  top: -33%;
+  left: -33%;
+  position: absolute;
+  z-index: -1;
+}
+
+#main-bg #circulo-bg2 {
+  width: 100%;
+  top: 66%;
+  left: 66%;
+  position: absolute;
+  z-index: -1;
 }
