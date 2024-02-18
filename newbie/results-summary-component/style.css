@@ -1,15 +1,5 @@
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
-/* 
-// <uniquifier>: Use a uniquifier for the class name
-// <weight>: Use a value from 100 to 900
-
-.hanken-grotesk-<uniquifier> {
-  font-family: "Hanken Grotesk", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-} */
 
 /* Variables */
 :root {
@@ -46,14 +36,18 @@ body {
 
 main #results-component {
   height: 100vh;
+  margin-bottom: 8rem;
 }
 
 /* Main */
 main #results-component #results-component__container {
   width: auto;
   height: auto;
-  box-shadow: 0 2rem var(--dark-gray-blue);
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
 }
+
 main
   #results-component
   #results-component__container
@@ -61,9 +55,14 @@ main
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1rem;
   padding: 1.6rem;
   text-align: center;
-  background: linear-gradient(180deg, var(--light-slate-blue-background) 0%, var(--light-royal-blue-background) 100%);
+  background: linear-gradient(
+    180deg,
+    var(--light-slate-blue-background) 0%,
+    var(--light-royal-blue-background) 100%
+  );
   border-radius: 0 0 3rem 3rem;
 }
 
@@ -72,9 +71,10 @@ main
   #results-component__container
   #results-component__score
   h2 {
-    font-size: 1.7rem;
-    font-weight: 600;
-    color: var(--light-lavender);
+  margin-bottom: 1rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: var(--light-lavender);
 }
 
 main
@@ -82,14 +82,18 @@ main
   #results-component__container
   #results-component__score
   #results-component__score-result {
+  height: 13rem;
+  width: 13rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 13rem;
-  width: 13rem;
   border-radius: 100%;
-  background: linear-gradient(180deg, var(--violet-blue-circle) 0%, var(--persian-blue-circle) 100%);
+  background: linear-gradient(
+    180deg,
+    var(--violet-blue-circle) 0%,
+    var(--persian-blue-circle) 100%
+  );
 }
 
 /* score results */
@@ -99,6 +103,7 @@ main
   #results-component__score
   #results-component__score-result
   h1 {
+  margin-top: 1.5rem;
   font-size: 5rem;
   font-weight: 900;
   color: var(--white);
@@ -110,10 +115,10 @@ main
   #results-component__score
   #results-component__score-result
   p {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: 500;
   color: var(--light-lavender);
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 /* Score text header */
@@ -122,8 +127,9 @@ main
   #results-component__container
   #results-component__score
   h3 {
+  margin-top: 1rem;
   font-size: 2.3rem;
-  font-weight: 8700;
+  font-weight: 700;
   color: var(--white);
 }
 
@@ -133,6 +139,7 @@ main
   #results-component__container
   #results-component__score
   p {
+  margin-bottom: 2rem;
   font-size: 1.3rem;
   font-weight: 400;
   color: var(--light-lavender);
@@ -144,9 +151,9 @@ main
   #results-component__container
   #results-component__score
   #results-component__score-text {
-    font-size: 1.5rem;
-    padding-inline: 5rem;
-  }
+  font-size: 1.5rem;
+  padding-inline: 5rem;
+}
 
 main .results-component__summary__score {
   font-size: 1.4rem;
@@ -191,7 +198,8 @@ main
   #results-component__container
   #results-component__summary
   h4 {
-  font-size: 1.7rem;
+  margin-top: 2rem;
+  font-size: 1.8rem;
   font-weight: 800;
   color: var(--dark-gray-blue);
 }
@@ -219,6 +227,7 @@ main
   #results-component__summary
   .results-component__summary__score
   p {
+  font-size: 1.5rem;
   color: var(--dark-gray-blue);
   font-weight: 900;
 }
@@ -231,6 +240,7 @@ main
   #results-component__summary
   .results-component__summary__score
   span {
+  font-size: 1.5rem;
   color: var(--dark-gray-blue);
   font-weight: 800;
   opacity: 0.6;
@@ -242,7 +252,7 @@ main
   #results-component__container
   #results-component__summary,
 .results-component__summary__label-name {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 
 /* Reaction styles */
@@ -335,11 +345,23 @@ main
   #results-component__summary-btn {
   width: 100%;
   height: 5.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--dark-gray-blue);
   border-radius: 3rem;
+}
+#results-component
+  #results-component__container
+  #results-component__summary
+  #results-component__summary-btn:hover {
+  background: linear-gradient(
+    180deg,
+    var(--light-slate-blue-background) 0%,
+    var(--violet-blue-circle) 100%
+  );
 }
 
 #results-component
@@ -347,8 +369,8 @@ main
   #results-component__summary
   #results-component__summary-btn
   a {
-    font-size: 1.8rem;
-    font-weight: 700;
+  font-size: 1.8rem;
+  font-weight: 600;
   color: var(--white);
 }
 
@@ -360,4 +382,101 @@ main
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/* Media Query */
+@media (min-width: 640px) {
+  main #results-component {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3rem;
+  }
+  main #results-component #results-component__container {
+    width: 73.6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 3rem;
+    box-shadow: 0.5rem 1.5rem 3rem 1rem var(--pale-blue);
+  }
+  main
+    #results-component
+    #results-component__container
+    #results-component__score {
+    border-radius: 3rem;
+  }
+
+  main
+    #results-component
+    #results-component__container
+    #results-component__score
+    h2 {
+    margin-bottom: 2rem;
+    font-size: 2.2rem;
+  }
+
+  main
+    #results-component
+    #results-component__container
+    #results-component__score
+    #results-component__score-result {
+    height: 17rem;
+    width: 17rem;
+  }
+
+  /* score results */
+  main
+    #results-component
+    #results-component__container
+    #results-component__score
+    #results-component__score-result
+    h1 {
+    font-size: 6.5rem;
+    font-weight: 700;
+  }
+
+  /* Score text header */
+  main
+    #results-component
+    #results-component__container
+    #results-component__score
+    h3 {
+    margin-top: 1.5rem;
+    font-size: 2.8rem;
+    font-weight: 500;
+  }
+
+  /* Score text */
+  main
+    #results-component
+    #results-component__container
+    #results-component__score
+    p {
+    margin-bottom: 2rem;
+  }
+
+  main
+    #results-component
+    #results-component__container
+    #results-component__score {
+    padding: 2.5rem;
+  }
+
+  main
+    #results-component
+    #results-component__container
+    #results-component__summary {
+    border-radius: 3rem;
+    padding-inline: 4rem;
+  }
+
+  /* Summary header */
+  main
+    #results-component
+    #results-component__container
+    #results-component__summary
+    h4 {
+    margin-top: 3rem;
+    font-size: 2rem;
+  }
 }
