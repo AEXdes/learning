@@ -1,0 +1,15 @@
+
+/* Variables */
+:root {
+  --blue: hsl(228, 45%, 44%);
+}
+
+/* Footer */
+
+footer .attribution {
+  font-size: 1.1rem;
+  text-align: center;
+}
+footer .attribution a {
+  color: var(--blue);
+}
