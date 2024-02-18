@@ -1,3 +1,146 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+/* 
+// <uniquifier>: Use a uniquifier for the class name
+// <weight>: Use a value from 100 to 900
+
+.hanken-grotesk-<uniquifier> {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+/* Variables */
+:root {
+  --light-red: hsl(0, 100%, 67%);
+  --orangey-yellow: hsl(39, 100%, 56%);
+  --green-teal: hsl(166, 100%, 37%);
+  --cobalt-blue: hsl(234, 85%, 45%);
+  --light-slate-blue-background: hsl(252, 100%, 67%);
+  --light-royal-blue-background: hsl(241, 81%, 54%);
+  --violet-blue-circle: hsla(256, 72%, 46%, 1);
+  --persian-blue-circle: hsla(241, 72%, 46%, 0);
+  --white: hsl(0, 0%, 100%);
+  --pale-blue: hsl(221, 100%, 96%);
+  --light-lavender: hsl(241, 100%, 89%);
+  --dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+/* Global Settings */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 500;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--persian-blue-circle);
+}
+
+main #results-component {
+  height: 100vh;
+}
+
+/* Main */
+main #results-component #results-component__container {
+  width: auto;
+  height: auto;
+  background-color: var(--green-teal);
+}
+main
+  #results-component
+  #results-component__container
+  #results-component__score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.6rem;
+  text-align: center;
+  background-color: var(--dark-gray-blue);
+}
+
+main
+  #results-component
+  #results-component__container
+  #results-component__score
+  h2 {
+  color: var(--pale-blue);
+}
+
+main
+  #results-component
+  #results-component__container
+  #results-component__score
+  #results-component__score-result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+  width: 10rem;
+  border-radius: 100%;
+  background-color: var(--green-teal);
+}
+
+main
+  #results-component
+  #results-component__container
+  #results-component__score
+  #results-component__score-result
+  h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  color: var(--white);
+}
+main
+  #results-component
+  #results-component__container
+  #results-component__score
+  #results-component__score-result
+  p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--pale-blue);
+}
+
+main
+  #results-component
+  #results-component__container
+  #results-component__score
+  h3 {
+  font-size: 1.8rem;
+  font-weight: 8700;
+  color: var(--white);
+}
+
+main
+  #results-component
+  #results-component__container
+  #results-component__score
+  p {
+  padding-inline: 13rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: var(--pale-blue);
+}
+
+main
+  #results-component
+  #results-component__container
+  #results-component__summary,
+  #results-component__summary-reaction,
+#results-component__summary-memory,
+#results-component__summary-verbal,
+#results-component__summary-visual {
+  display: flex;
+  justify-content: space-around;
+}
 
 /* Footer */
 .attribution {
