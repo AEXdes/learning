@@ -14,89 +14,125 @@ fetch("./data.json")
       "results-component__summary-visual"
     );
 
+    //
     // Reaction
+    const reactionLabelDiv = document.createElement("div");
+    reactionResults.appendChild(reactionLabelDiv);
+    reactionLabelDiv.className = "results-component__summary__label";
+
+    const reactionScoreDiv = document.createElement("div");
+    reactionResults.appendChild(reactionScoreDiv);
+    reactionScoreDiv.className = "results-component__summary__score";
+
     // Reaction Image
     const reactionIMG = document.createElement("img");
     reactionIMG.src = data[0].icon;
     reactionIMG.setAttribute("alt", "reaction icon");
-    reactionResults.appendChild(reactionIMG);
+    reactionLabelDiv.appendChild(reactionIMG);
 
     // Reaction Category
     const reactionCategory = document.createElement("p");
     reactionCategory.innerHTML = data[0].category;
-    reactionResults.appendChild(reactionCategory);
+    reactionLabelDiv.appendChild(reactionCategory);
 
     // Reaction Score
     const reactionScore = document.createElement("p");
     reactionScore.innerHTML = data[0].score;
-    reactionResults.appendChild(reactionScore);
+    reactionScoreDiv.appendChild(reactionScore);
 
     // Reaction 100
     const reaction100 = document.createElement("span");
     reaction100.innerHTML = "/ 100";
     reaction100.className = "results100";
-    reactionResults.appendChild(reaction100);
+    reactionScoreDiv.appendChild(reaction100);
 
+    //
     // Memory
+    const memoryLabelDiv = document.createElement("div");
+    memoryResults.appendChild(memoryLabelDiv);
+    memoryLabelDiv.className = "results-component__summary__label";
+
+    const memoryScoreDiv = document.createElement("div");
+    memoryResults.appendChild(memoryScoreDiv);
+    memoryScoreDiv.className = "results-component__summary__score";
+
     // Memory Image
     const memoryIMG = document.createElement("img");
     memoryIMG.src = data[1].icon;
     memoryIMG.setAttribute("alt", "reaction icon");
-    memoryResults.appendChild(memoryIMG);
+    memoryLabelDiv.appendChild(memoryIMG);
     // Memory Category
     const memoryCategory = document.createElement("p");
     memoryCategory.innerHTML = data[1].category;
-    memoryResults.appendChild(memoryCategory);
+    memoryLabelDiv.appendChild(memoryCategory);
     // Memory Score
     const memoryScore = document.createElement("p");
     memoryScore.innerHTML = data[1].score;
-    memoryResults.appendChild(memoryScore);
+    memoryScoreDiv.appendChild(memoryScore);
 
     // Memory 100
     const memory100 = document.createElement("span");
     memory100.innerHTML = "/ 100";
     memory100.className = "results100";
-    memoryResults.appendChild(memory100);
-
+    memoryScoreDiv.appendChild(memory100);
+    
+    // 
     // Verbal
+    const verbalLabelDiv = document.createElement("div");
+    verbalResults.appendChild(verbalLabelDiv);
+    verbalLabelDiv.className = "results-component__summary__label";
+
+    const verbalScoreDiv = document.createElement("div");
+    verbalResults.appendChild(verbalScoreDiv);
+    verbalScoreDiv.className = "results-component__summary__score";
+
     // Verbal Image
     const verbalIMG = document.createElement("img");
     verbalIMG.src = data[2].icon;
     verbalIMG.setAttribute("alt", "reaction icon");
-    verbalResults.appendChild(verbalIMG);
+    verbalLabelDiv.appendChild(verbalIMG);
     // Verbal Category
     const verbalCategory = document.createElement("p");
     verbalCategory.innerHTML = data[2].category;
-    verbalResults.appendChild(verbalCategory);
+    verbalLabelDiv.appendChild(verbalCategory);
     // Verbal Score
     const verbalScore = document.createElement("p");
     verbalScore.innerHTML = data[2].score;
-    verbalResults.appendChild(verbalScore);
+    verbalScoreDiv.appendChild(verbalScore);
 
     // verbal 100
     const verbal100 = document.createElement("span");
     verbal100.innerHTML = "/ 100";
     verbal100.className = "results100";
-    verbalResults.appendChild(verbal100);
-
+    verbalScoreDiv.appendChild(verbal100);
+    
+    // 
     // Visual
+    const visualLabelDiv = document.createElement("div");
+    visualResults.appendChild(visualLabelDiv);
+    visualLabelDiv.className = "results-component__summary__label";
+
+    const visualScoreDiv = document.createElement("div");
+    visualResults.appendChild(visualScoreDiv);
+    visualScoreDiv.className = "results-component__summary__score";
+
     // Visual Image
     const visualIMG = document.createElement("img");
     visualIMG.src = data[3].icon;
     visualIMG.setAttribute("alt", "reaction icon");
-    visualResults.appendChild(visualIMG);
+    visualLabelDiv.appendChild(visualIMG);
     // Visual Category
     const visualCategory = document.createElement("p");
     visualCategory.innerHTML = data[3].category;
-    visualResults.appendChild(visualCategory);
+    visualLabelDiv.appendChild(visualCategory);
     // Visual Score
     const visualScore = document.createElement("p");
     visualScore.innerHTML = data[3].score;
-    visualResults.appendChild(visualScore);
+    visualScoreDiv.appendChild(visualScore);
 
     // Visual 100
     const visual100 = document.createElement("span");
     visual100.innerHTML = "/ 100";
     visual100.className = "results100";
-    visualResults.appendChild(visual100);
+    visualScoreDiv.appendChild(visual100);
   });
