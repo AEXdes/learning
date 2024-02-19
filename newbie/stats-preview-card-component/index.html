@@ -1,33 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The AEX version of Stats Preview Card Component Challenge"
+    />
+    <meta name="robots" content="index, follow" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Stats preview card component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Stats preview card component</title>
 
-  Get insights that help your business grow.
+    <link rel="stylesheet" href="./style.css" />
+    nk
+  </head>
+  <body>
+    <main>
+      <section id="card-stats__container">
+        <div id="card-stats__image">
+          <picture>
+            <source
+              media="(max-width: 640px)"
+              srcset="./assets/images/image-header-desktop.jpg 540w"
+            />
+            <img
+              src="./assets/images/image-header-mobile.jpg"
+              alt="happy professionals"
+              height="654px"
+              width="480px"
+            />
+          </picture>
+        </div>
+        <div id="card-stats__content">
+          <h1>Get insights that help your business grow.</h1>
+          <p>
+            Discover the benefits of data analytics and make better decisions
+            regarding revenue, customer experience, and overall efficiency.
+          </p>
+          <div id="card-stats__content-data">
+            <div id="card-stats__content-data-companies">
+              <h2 class="card-stats__content-headers">10k+</h2>
+              <p class="card-stats__content-text">companies</p>
+            </div>
+            <div id="card-stats__content-data-templates">
+              <h2 class="card-stats__content-headers">314</h2>
+              <p class="card-stats__content-text">templates</p>
+            </div>
+            <div id="card-stats__content-data-queries">
+              <h2 class="card-stats__content-headers">12m+</h2>
+              <p class="card-stats__content-text">queries</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
-
-  10k+ companies
-  314 templates
-  12m+ queries
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <!-- Footer  -->
+    <footer>
+      <section class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/AEXdes" target="_blank">AEX</a>.
+      </section>
+    </footer>
+  </body>
 </html>
