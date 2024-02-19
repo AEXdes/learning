@@ -1,11 +1,187 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+/* 
+.young-serif-regular {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+// <uniquifier>: Use a uniquifier for the class name
+// <weight>: Use a value from 100 to 900
+
+.outfit-<uniquifier> {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+*/
 
 /* Variables */
 :root {
+  --nutmeg: hsl(14, 45%, 36%);
+  --dark-raspberry: hsl(332, 51%, 32%);
+  --white: hsl(0, 0%, 100%);
+  --rose-white: hsl(330, 100%, 98%);
+  --eggshell: hsl(30, 54%, 90%);
+  --light-grey: hsl(30, 18%, 87%);
+  --wenge-brown: hsl(30, 10%, 34%);
+  --dark-charcoal: hsl(24, 5%, 18%);
   --blue: hsl(228, 45%, 44%);
 }
 
-/* Footer */
+/* Global Settings */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", sans-serif;
+  color: var(--wenge-brown);
+}
 
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--eggshell);
+}
+
+/*------- main -------*/
+
+/* Classes */
+/* Sections-headers */
+.card-recipe__section-header {
+  margin-bottom: 2rem;
+
+  font-family: "Young Serif", serif;
+  font-size: 2.8rem;
+  font-weight: 500;
+  color: var(--dark-raspberry);
+}
+
+/* ID's */
+/* recipe-container__list-global-settings */
+main li::marker {
+  color: var(--nutmeg);
+  font-size: 1.2rem;
+}
+
+/* recipe-container */
+main #card-recipe__container {
+  background-color: var(--white);
+}
+
+/* recipe-image */
+main #card-recipe__container #card-recipe__image img {
+  width: 100%;
+}
+
+main #card-recipe__container #card-recipe__description {
+  padding: 3.2rem;
+}
+
+/* main-info__header */
+main #card-recipe__container #card-recipe__description h1 {
+  margin-top: 0.5rem;
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 3.7rem;
+  color: var(--dark-charcoal);
+  font-family: "Young Serif", serif;
+}
+
+/* main-info__paragraph */
+main #card-recipe__container #card-recipe__description p {
+  margin-top: 2.2rem;
+
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+}
+
+/* preparation-time__container */
+main #card-recipe__container #card-recipe__preparation {
+  margin-inline: 3.2rem;
+  padding-inline: 2.3rem;
+  margin-block: 2.5rem;
+
+  background-color: var(--rose-white);
+  border-radius: 1rem;
+}
+
+/* preparation-time__header */
+main #card-recipe__container #card-recipe__preparation h2 {
+  padding-top: 2rem;
+
+  font-size: 2rem;
+  color: var(--dark-raspberry);
+}
+
+/* preparation-time__list */
+main #card-recipe__container #card-recipe__preparation ul {
+  padding-top: 1.5rem;
+  padding-inline: 2rem;
+  padding-bottom: 1.1rem;
+}
+
+main #card-recipe__container #card-recipe__preparation ul li {
+  padding-left: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+main #card-recipe__container #card-recipe__preparation ul li span,
+b {
+  font-size: 1.6rem;
+}
+
+main #card-recipe__container #card-recipe__preparation ul li span {
+  line-height: 2.4rem;
+}
+
+/* ingredients__container */
+main #card-recipe__container #card-recipe__ingredients {
+  padding-inline: 3.2rem;
+}
+
+/* ingredients__list */
+main #card-recipe__container #card-recipe__ingredients ul {
+  padding-inline: 2.1rem;
+}
+main #card-recipe__container #card-recipe__ingredients ul li {
+  margin-bottom: 1.2rem;
+  padding-left: 1.4rem;
+
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+/* hr */
+main hr {
+  margin-inline: 3rem;
+  margin-block: 3rem;
+  border: 0.001rem solid var(--light-grey);
+}
+
+main #card-recipe__container #card-recipe__instructions {
+  margin-inline: 3rem;
+}
+
+main #card-recipe__container #card-recipe__instructions ol {
+  padding-inline: 1.8rem;
+}
+
+main #card-recipe__container #card-recipe__instructions ol li {
+  padding-left: 1.4rem;
+
+  font-size: 1.6rem;
+  line-height: 2.3rem;
+}
+
+main #card-recipe__container #card-recipe__instructions
+
+/*------ footer -------*/
 footer .attribution {
   font-size: 1.1rem;
   text-align: center;
