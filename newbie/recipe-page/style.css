@@ -58,7 +58,14 @@ body {
   font-family: "Young Serif", serif;
   font-size: 2.8rem;
   font-weight: 500;
-  color: var(--dark-raspberry);
+  color: var(--nutmeg);
+}
+.card-recipe__text {
+  margin-top: 2.2rem;
+
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
 }
 
 /* ID's */
@@ -86,7 +93,7 @@ main #card-recipe__container #card-recipe__description {
 main #card-recipe__container #card-recipe__description h1 {
   margin-top: 0.5rem;
   font-size: 3.6rem;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 3.7rem;
   color: var(--dark-charcoal);
   font-family: "Young Serif", serif;
@@ -94,18 +101,18 @@ main #card-recipe__container #card-recipe__description h1 {
 
 /* main-info__paragraph */
 main #card-recipe__container #card-recipe__description p {
-  margin-top: 2.2rem;
+  /* margin-top: 2.2rem;
 
   font-size: 1.6rem;
   font-weight: 400;
-  line-height: 2.4rem;
+  line-height: 2.4rem; */
 }
 
 /* preparation-time__container */
 main #card-recipe__container #card-recipe__preparation {
+  margin-bottom: 2.5rem;
   margin-inline: 3.2rem;
   padding-inline: 2.3rem;
-  margin-block: 2.5rem;
 
   background-color: var(--rose-white);
   border-radius: 1rem;
@@ -149,12 +156,14 @@ main #card-recipe__container #card-recipe__ingredients {
 main #card-recipe__container #card-recipe__ingredients ul {
   padding-inline: 2.1rem;
 }
+
 main #card-recipe__container #card-recipe__ingredients ul li {
-  margin-bottom: 1.2rem;
-  padding-left: 1.4rem;
+  margin-bottom: 1rem;
+  padding-left: 1.9rem;
 
   font-size: 1.6rem;
   font-weight: 500;
+  line-height: 2.4rem;
 }
 
 /* hr */
@@ -164,28 +173,121 @@ main hr {
   border: 0.001rem solid var(--light-grey);
 }
 
+/* instructions__container */
+
 main #card-recipe__container #card-recipe__instructions {
   margin-inline: 3rem;
 }
 
 main #card-recipe__container #card-recipe__instructions ol {
-  padding-inline: 1.8rem;
+  padding-inline: 1.3rem;
 }
 
 main #card-recipe__container #card-recipe__instructions ol li {
-  padding-left: 1.4rem;
+  margin-bottom: 1rem;
+  padding-left: 1.7rem;
 
   font-size: 1.6rem;
   line-height: 2.3rem;
 }
 
-main #card-recipe__container #card-recipe__instructions
+main #card-recipe__container #card-recipe__instructions ol li::marker {
+  color: var(--nutmeg);
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+/* nutrition__container */
+main #card-recipe__container #card-recipe__nutrition {
+  padding-inline: 3.2rem;
+}
+
+main #card-recipe__container #card-recipe__nutrition P {
+  padding-right: 1rem;
+}
+
+/* nutrition__table */
+main #card-recipe__container #card-recipe__nutrition table {
+  width: 100%;
+  margin-top: 2rem;
+
+  border-collapse: collapse;
+}
+
+main #card-recipe__container #card-recipe__nutrition th {
+  width: 16rem;
+  padding-left: 3rem;
+
+  font-weight: 400;
+}
+
+main #card-recipe__container #card-recipe__nutrition td {
+  color: var(--nutmeg);
+  font-weight: 700;
+}
+
+main #card-recipe__container #card-recipe__nutrition th,
+td {
+  padding-bottom: 1.2rem;
+  padding-top: 1.2rem;
+
+  font-size: 1.6rem;
+  text-align: left;
+}
+
+.bottom-line {
+  border-bottom: 0.1rem solid var(--light-grey);
+  border-collapse: collapse;
+}
 
 /*------ footer -------*/
 footer .attribution {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   text-align: center;
 }
 footer .attribution a {
   color: var(--blue);
+}
+
+/*------ media-queries -------*/
+@media (min-width: 375px) {
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main #card-recipe__container {
+    margin-block: 6rem;
+    width: 73.6rem;
+    border-radius: 2.5rem;
+  }
+
+  /* main img */
+  main #card-recipe__container #card-recipe__image {
+    margin-top: 4rem;
+    margin-inline: 4rem;
+  }
+
+  main #card-recipe__container #card-recipe__image img {
+    border-radius: 1.5rem;
+  }
+
+  main #card-recipe__container #card-recipe__instructions ol {
+    margin-left: 2rem;
+  }
+
+  /* nutrition__table */
+  main #card-recipe__container #card-recipe__nutrition table {
+    margin-bottom: 3rem;
+  }
+
+  main #card-recipe__container #card-recipe__nutrition th {
+    padding-left: 4rem;
+  }
+
+  main #card-recipe__container #card-recipe__nutrition td {
+    padding-left: 19rem;
+  }
+
 }
