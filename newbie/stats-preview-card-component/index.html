@@ -19,15 +19,15 @@
     <title>Frontend Mentor | Stats preview card component</title>
 
     <link rel="stylesheet" href="./style.css" />
-    nk
   </head>
   <body>
     <main>
       <section id="card-stats__container">
         <div id="card-stats__image">
+          <div id="card-stats__image-overlay"></div>
           <picture>
             <source
-              media="(max-width: 640px)"
+              media="(min-width: 640px)"
               srcset="./assets/images/image-header-desktop.jpg 540w"
             />
             <img
@@ -39,23 +39,29 @@
           </picture>
         </div>
         <div id="card-stats__content">
-          <h1>Get insights that help your business grow.</h1>
-          <p>
+          <h1>Get <span>insights</span> that help your business grow.</h1>
+          <p class="card-stats__content-text">
             Discover the benefits of data analytics and make better decisions
             regarding revenue, customer experience, and overall efficiency.
           </p>
           <div id="card-stats__content-data">
             <div id="card-stats__content-data-companies">
               <h2 class="card-stats__content-headers">10k+</h2>
-              <p class="card-stats__content-text">companies</p>
+              <p class="card-stats__content-text card-stats__content-text-caps">
+                companies
+              </p>
             </div>
             <div id="card-stats__content-data-templates">
               <h2 class="card-stats__content-headers">314</h2>
-              <p class="card-stats__content-text">templates</p>
+              <p class="card-stats__content-text card-stats__content-text-caps">
+                templates
+              </p>
             </div>
             <div id="card-stats__content-data-queries">
-              <h2 class="card-stats__content-headers">12m+</h2>
-              <p class="card-stats__content-text">queries</p>
+              <h2 class="card-stats__content-headers">12M+</h2>
+              <p class="card-stats__content-text card-stats__content-text-caps">
+                queries
+              </p>
             </div>
           </div>
         </div>

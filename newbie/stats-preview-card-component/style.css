@@ -1,36 +1,8 @@
 /*------- Fonts -------*/
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
-/* 
-// <uniquifier>: Use a uniquifier for the class name
-// <weight>: Use a value from 100 to 900
-
-.inter-<uniquifier> {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "slnt" 0;
-}
-*/
-
-/* 
-// <uniquifier>: Use a uniquifier for the class name
-// <weight>: Use a value from 100 to 900
-
-.inter-<uniquifier> {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "slnt" 0;
-}
-*/
-
-/*------- Variables -------*/
+/*------- variables -------*/
 :root {
   --very-dark-blue-mainBackground: hsl(233, 47%, 7%);
   --dark-desaturated-blue-cardBackground: hsl(244, 38%, 16%);
@@ -41,7 +13,7 @@
   --blue: hsl(228, 45%, 44%);
 }
 
-/*------- Global Settings -------*/
+/*------- global-settings -------*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -53,9 +25,109 @@ html {
 }
 
 body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: var(--white-mainHeadingStats);
+
+  background-color: var(--very-dark-blue-mainBackground);
 }
 
 /*------- main -------*/
+main {
+  margin-bottom: 5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* card-stats__container */
+main #card-stats__container {
+  width: 32.5rem;
+
+  margin-top: 8.5rem;
+
+  display: grid;
+  grid-template-rows: auto 1fr;
+
+  background-color: var(--dark-desaturated-blue-cardBackground);
+  border-radius: 0.7rem;
+
+  text-align: center;
+}
+
+/* card-stats__image */
+main #card-stats__container #card-stats__image {
+  width: 100%;
+  height: 99%;
+  position: relative;
+
+  overflow: hidden;
+}
+
+main #card-stats__container #card-stats__image-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: hsla(279, 100%, 26%, 0.544);
+  border-radius: 0.7rem 0.7rem 0 0;
+}
+
+main #card-stats__container #card-stats__image picture img {
+  width: 100%;
+  height: auto;
+
+  border-radius: 0.7rem 0.7rem 0 0;
+}
+
+/* card-stats__content */
+
+main #card-stats__container #card-stats__content {
+  margin-top: 0.5rem;
+  padding-inline: 3rem;
+}
+
+main #card-stats__container #card-stats__content h1 {
+  margin-top: 3.2rem;
+  margin-bottom: 1.9rem;
+
+  font-size: 2.7rem;
+  letter-spacing: 0.07rem;
+  font-weight: 600;
+}
+
+main #card-stats__container #card-stats__content span {
+  color: var(--soft-violet-accent);
+}
+
+/* card-stats__content-data */
+main #card-stats__container #card-stats__content #card-stats__content-data {
+  margin-top: 3.4rem;
+  margin-bottom: 3.4rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* main__classes */
+.card-stats__content-headers {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.card-stats__content-text {
+  font-size: 1.5rem;
+  line-height: 2.6rem;
+  color: var(--slightly-transparent-white-statHeadings);
+}
+.card-stats__content-text-caps {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.7rem;
+  font-variant: small-caps;
+  letter-spacing: 0.1rem;
+}
 
 /*------ footer -------*/
 footer .attribution {
@@ -64,4 +136,97 @@ footer .attribution {
 }
 footer .attribution a {
   color: var(--blue);
+}
+
+/*------ Media Queries -------*/
+@media (min-width: 1024px) {
+  /*------- main///desktop -------*/
+  main {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* card-stats__container///desktop */
+  main #card-stats__container {
+    width: 111rem;
+    height: 44.5rem;
+
+    margin-top: 0;
+
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  main #card-stats__container #card-stats__image-overlay {
+    border-radius: 0 0.7rem 0.7rem 0;
+  }
+
+  /* card-stats__content///desktop */
+
+  main #card-stats__container #card-stats__content {
+    margin-top: 0;
+    padding-inline: 7rem;
+    padding-right: 9rem;
+  }
+
+  main #card-stats__container #card-stats__content h1 {
+    margin-top: 7rem;
+    margin-bottom: 2.4rem;
+
+    font-size: 3.5rem;
+    font-weight: 600;
+    text-align: left;
+  }
+
+  /* card-stats__image///desktop */
+
+  main #card-stats__container #card-stats__image {
+    width: auto;
+    height: 100%;
+    order: 2;
+  }
+
+  main #card-stats__container #card-stats__image picture img {
+    width: 100%;
+    height: auto;
+
+    border-radius: 0 0.7rem 0.7rem 0;
+  }
+
+  /* card-stats__content-data///desktop */
+  main #card-stats__container #card-stats__content #card-stats__content-data {
+    margin-top: 8rem;
+    padding-right: 3rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    text-align: left;
+  }
+
+  /* main__classes///desktop */
+  .card-stats__content-headers {
+    font-size: 2.4rem;
+    font-weight: 600;
+  }
+
+  .card-stats__content-text {
+    padding-right: 2rem;
+
+    font-size: 1.5rem;
+    line-height: 2.6rem;
+    text-align: left;
+    color: var(--slightly-transparent-white-statHeadings);
+  }
+  .card-stats__content-text-caps {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 1.7rem;
+    font-variant: small-caps;
+    letter-spacing: 0.1rem;
+  }
 }
