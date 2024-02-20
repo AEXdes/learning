@@ -166,7 +166,6 @@ footer .attribution a {
   }
 
   /* card-stats__content///desktop */
-
   main #card-stats__container #card-stats__content {
     margin-top: 0;
     padding-inline: 7rem;
@@ -183,11 +182,11 @@ footer .attribution a {
   }
 
   /* card-stats__image///desktop */
-
   main #card-stats__container #card-stats__image {
     width: auto;
     height: 100%;
     order: 2;
+    border-radius: 0 0.7rem 0.7rem 0;
   }
 
   main #card-stats__container #card-stats__image picture img {
