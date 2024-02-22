@@ -1,0 +1,21 @@
+
+/*------ fonts -------*/
+
+/*------ Variables -------*/
+
+/*------ globals -------*/
+
+
+
+
+/*------ main -------*/
+
+
+/*------ footer -------*/
+footer .attribution {
+  font-size: 1.3rem;
+  text-align: center;
+}
+footer .attribution a {
+  color: var(--blue);
+}
