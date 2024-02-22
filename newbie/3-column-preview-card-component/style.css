@@ -153,7 +153,7 @@ main #card-carsTypes__container #card-carsTypes__luxury a:hover {
 
 main .card-carsTypes-buttons:hover {
   background-color: transparent;
-  border: 0.3rem solid white;
+  border: 0.3rem solid var(--transparent-white);
 }
 
 /*------ footer -------*/
