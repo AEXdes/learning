@@ -70,6 +70,7 @@ main #card-carsTypes__container #card-carsTypes__sedans a {
   color: var(--bright-orange);
 }
 
+
 /* SUVs */
 
 main #card-carsTypes__container #card-carsTypes__suvs {
@@ -136,10 +137,23 @@ main .card-carsTypes-buttons {
   border-radius: 5rem;
 }
 
+/*------ interactions -------*/
+
+main #card-carsTypes__container #card-carsTypes__sedans a:hover {
+  color: var(--transparent-white);
+}
+
+main #card-carsTypes__container #card-carsTypes__suvs a:hover {
+  color: var(--transparent-white);
+}
+
+main #card-carsTypes__container #card-carsTypes__luxury a:hover {
+  color: var(--transparent-white);
+}
+
 main .card-carsTypes-buttons:hover {
   background-color: transparent;
-  border: 1rem solid var(--transparent-white);
-  color: var(--transparent-white);
+  border: 0.3rem solid white;
 }
 
 /*------ footer -------*/
@@ -157,8 +171,16 @@ footer .attribution a {
 @media (min-width: 640px) {
   /*------ main/desktop -------*/
 
+main {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
   main #card-carsTypes__container {
-    margin-block: 50%;
+    margin-block: 0;
     padding-inline: 26rem;
 
     display: flex;
