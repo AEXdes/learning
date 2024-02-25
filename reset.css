@@ -1,5 +1,7 @@
 /*! destyle.css v4.0.1 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 
+/*! Some modifications by AEX*/
+
 /* Reset box-model and set borders */
 /* ============================================ */
 
@@ -25,6 +27,8 @@ html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
   -webkit-tap-highlight-color: transparent; /* 3*/
+  /* AEX modification */
+  font-size: 62.5%; /* Root font size to 10px */
 }
 
 /* Sections */
@@ -36,6 +40,8 @@ html {
 
 body {
   margin: 0;
+  /* AEX modification */
+  font-size: 1.6rem; /* Font size back to 16px for working */
 }
 
 /**

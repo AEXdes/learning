@@ -29,6 +29,11 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap"
       rel="stylesheet"
     />
+    <!-- icons -->
+    <script
+      src="https://kit.fontawesome.com/612ee9c0c7.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!-- header -->
@@ -51,34 +56,31 @@
 
     <!-- main -->
     <main>
-      <!-- introduction -->
-      <section class="image-container">
-        <!-- image -->
-        <div class="image-container__image">
-          <img
-            src="./images/illustration-mockups.svg"
-            width="709"
-            height="506"
-            alt="mockups illustration"
-          />
-        </div>
-
-        <div class="content">
-          <h1 class="content__header">
-            Build The Community Your Fans Will Love
-          </h1>
-          <p class="content__text">
-            Huddle re-imagines the way we build communities. You have a voice,
-            but so does your audience. Create connections with your users as you
-            engage in genuine discussion.
-          </p>
-          <a class="content__button" href="#">Register</a>
-        </div>
+      <!-- image -->
+      <section class="hero-image">
+        <img
+          class="hero-image__img"
+          src="./images/illustration-mockups.svg"
+          width="709"
+          height="506"
+          alt="mockups illustration"
+        />
       </section>
+      <!-- content -->
+      <section class="content">
+        <h1 class="content__header">Build The Community Your Fans Will Love</h1>
+        <p class="content__text">
+          Huddle re-imagines the way we build communities. You have a voice, but
+          so does your audience. Create connections with your users as you
+          engage in genuine discussion.
+        </p>
+        <a class="content__button content__button--hover" href="#">Register</a>
+      </section>
+      <!-- social -->
       <section class="social">
-        <i class="social__facebook"></i>
-        <i class="social__twitter"></i>
-        <i class="social__instagram"></i>
+        <i class="fa-brands fa-facebook-f fa-xs social__icon social__icon--hover"></i>
+        <i class="fa-brands fa-twitter fa-xs social__icon social__icon--hover"></i>
+        <i class="fa-brands fa-instagram fa-sm social__icon social__icon--hover"></i>
       </section>
     </main>
 
@@ -86,9 +88,18 @@
     <footer>
       <section class="attribution">
         Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        <a
+          class="attribution__link"
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="https://github.com/AEXdes" target="_blank">AEX</a>.
+        >. Coded by
+        <a
+          class="attribution__link"
+          href="https://github.com/AEXdes"
+          target="_blank"
+          >AEX</a
+        >.
       </section>
     </footer>
   </body>
