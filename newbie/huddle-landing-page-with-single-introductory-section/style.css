@@ -1,0 +1,10 @@
+/*------ footer -------*/
+
+footer .attribution {
+  font-size: 1.3rem;
+  text-align: center;
+  color: black;
+}
+footer .attribution a {
+  color: var(--blue);
+}
