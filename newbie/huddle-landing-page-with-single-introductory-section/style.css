@@ -1,4 +1,6 @@
 body {
+  height: 100vh;
+
   background-image: url("./images/bg-mobile.svg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -16,13 +18,12 @@ body {
 
 .header__logo {
   max-width: 13rem;
+  height: auto;
 }
 
 /*------ main -------*/
 
 main {
-  height: 100vh;
-  margin-bottom: 3rem;
   padding-top: 3rem;
 }
 
@@ -80,8 +81,11 @@ main {
   background-color: hsl(300, 69%, 71%);
 }
 
+footer {
+  margin-block: 6rem;
+}
+
 .social {
-  margin-top: 6rem;
   display: flex;
   justify-content: center;
   gap: 0.7em;
@@ -115,29 +119,77 @@ main {
   color: hsl(228, 45%, 44%);
 }
 
-/* 
-// <uniquifier>: Use a uniquifier for the class name
+/*------ media query -------*/
 
-.open-sans-<uniquifier> {
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+@media (min-width: 768px) {
+  body {
+    height: 100vh;
+    background-image: url("./images/bg-desktop.svg");
+    background-size: cover;
+  }
+
+  .header {
+    padding-block: 6rem;
+    padding-inline: 6rem;
+  }
+
+  /*------ header/desktop -------*/
+  .header__logo {
+    max-width: 35rem;
+  }
+
+  /*------ main/desktop -------*/
+
+  main {
+    padding-inline: 3rem;
+    display: grid;
+    grid-template-columns: 2fr 1.5fr;
+  }
+  .content {
+    margin-top: 0;
+    padding-inline: 0;
+    padding-right: 5rem;
+    text-align: left;
+  }
+  .content__header {
+    font-size: 3rem;
+    line-height: 5rem;
+  }
+
+  .content__text {
+    margin-top: 2rem;
+
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+  }
+
+  .content__button {
+    max-width: 16rem;
+
+    margin: 0;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 1.4rem;
+    font-size: 1.4rem;
+  }
+
+  footer {
+    margin-block: 2rem;
+  }
+
+  .social {
+    padding-right: 10rem;
+    justify-content: flex-end;
+    gap: 0.7em;
+  }
+
+  .social__icon {
+    width: 2.8rem;
+    height: 2.8rem;
+
+    border: 0.1rem solid white;
+    border-radius: 50rem;
+  }
 }
-
-.poppins-regular {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.poppins-semibold {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-}
-
-
-*/
