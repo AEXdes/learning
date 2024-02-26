@@ -1,8 +1,130 @@
+/*--- global ---*/
+body {
+  font-family: "League Spartan", sans-serif;
 
+  background-image: url("./images/bg-pattern-top-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 
+/*--- main ---*/
+main {
+  padding: 2.5rem;
+  margin-bottom: 2.8em;
+}
 
+/* content */
+.content {
+  margin-top: 5.8rem;
+  margin-bottom: 3.8rem;
+  text-align: center;
+  color: hsl(300, 43%, 22%);
+}
 
-/*------ footer -------*/
+.content__header {
+  margin-bottom: 2.3rem;
+
+  font-size: 3.9rem;
+  line-height: 3.2rem;
+  letter-spacing: -0.12rem;
+  font-weight: 800;
+}
+
+.content__text {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+}
+
+/* rating */
+
+.rating {
+  margin-bottom: 4.9rem;
+}
+
+.rating__card {
+  width: auto;
+  height: 7.8rem;
+  margin-bottom: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+
+  text-align: center;
+
+  background-color: hsl(300, 24%, 96%);
+  border-radius: 0.7rem;
+}
+
+.rating__stars-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.rating__star {
+  width: 1.7rem;
+  height: 1.6rem;
+
+  background-image: url("./images/icon-star.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.rating__header {
+  font-size: 1.65rem;
+  font-weight: 800;
+  color: hsl(300, 43%, 22%);
+}
+
+/* reviews */
+
+.reviews__card {
+  width: auto;
+  height: 25rem;
+  margin-bottom: 1.5rem;
+  padding: 3.3rem;
+
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 1rem;
+}
+
+.reviews__profile {
+  margin-top: 1rem;
+  margin-bottom: 2.3rem;
+  display: flex;
+  justify-content: flex-start;
+  gap: 2.3rem;
+  align-items: center;
+}
+
+.reviews__picture {
+  width: 4rem;
+  border-radius: 50rem;
+}
+
+.reviews__name {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: white;
+}
+
+.reviews__verified {
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: hsl(333, 80%, 67%);
+}
+
+.reviews__text {
+  font: 1.7rem;
+  line-height: 2.2rem;
+  color: white;
+}
+
+/*--- footer ---*/
 
 .attribution {
   font-size: 1rem;
@@ -15,7 +137,6 @@
 }
 
 /* 
-
 // <uniquifier>: Use a uniquifier for the class name
 // <weight>: Use a value from 100 to 900
 
