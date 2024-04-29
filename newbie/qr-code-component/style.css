@@ -41,7 +41,7 @@ main {
   margin: 2.3rem 0 1.7rem 0;
 
   font-size: 2.2rem;
-  font-weight: 800;
+  font-weight: 700;
   text-align: center;
   line-height: 2.8rem;
   color: hsl(218, 44%, 22%);
@@ -68,5 +68,6 @@ main {
 }
 
 .attribution a {
+  text-decoration: underline;
   color: hsl(228, 45%, 44%);
 }
