@@ -1,7 +1,10 @@
-# My Frontend Mentor solutions
+# Frontend Mentor Challenges
+Frontend Mentor is a website that offers web development challenges at various levels of difficulty.
 
-- ## Table of contents
-  - [Newbie](./newbie)(Free)
+Website: https://www.frontendmentor.io/
+
+- ## Completed challenges
+  - [Newbie](./newbie)
     - [QR Code Component](./newbie/qr-code-component)
     - [Blog Preview Card](./newbie/blog-preview-card/)
     - [Social links profile](./newbie/social-links-profile/)
@@ -17,3 +20,9 @@
     - [Huddle landing page with a single introductory section](./newbie/huddle-landing-page-with-single-introductory-section/)
     - [Social proof section](./newbie/social-proof-section/)
     - [Four Card Feature Section](./newbie/four-card-feature-section/)
+
+## Build With
+- HTML5
+- CSS3
+- Javascript ES6
+
