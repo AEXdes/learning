@@ -14,34 +14,38 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
-
     <title>Frontend Mentor | Blog preview card</title>
+    <!-- Reset -->
+    <link rel="stylesheet" href="../../reset.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Styles -->
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <!-- Main -->
     <main>
-      <section id="card-container">
-        <div id="card">
+      <section class="card-container">
+        <div class="card">
           <!-- Illustration -->
-          <div id="card-illustration-container">
-            <img
-              src="./assets/images/illustration-article.svg"
-              alt="illustration"
-            />
-          </div>
-          <div id="card-content-container">
-            <div id="card-tag">
+          <div class="card-illustration-container"></div>
+          <div class="card-content-container">
+            <div class="card-tag">
               <h2>Learning</h2>
             </div>
             <h3>Published 21 Dec 2023</h3>
             <a href="#"><h1>HTML & CSS foundations</h1></a>
-            <p id="card-description">
+            <p class="card-description">
               These languages are the backbone of every website, defining
               structure, content, and presentation.
             </p>
             <!-- Profile picture -->
-            <div id="card-profile-container">
+            <div class="card-profile-container">
               <img
                 src="./assets/images/image-avatar.webp"
                 alt="profile-picture"
@@ -52,7 +56,6 @@
         </div>
       </section>
     </main>
-
     <!-- Footer -->
     <footer>
       <section class="attribution">
@@ -60,7 +63,7 @@
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
         >. Coded by
-        <a href="https://github.com/AEXdes" target="_blank">AEX/design</a>.
+        <a href="https://github.com/dev-aex" target="_blank">AEX</a>.
       </section>
     </footer>
   </body>
