@@ -7,7 +7,7 @@ Frontend Mentor is a website that offers web development challenges at various l
 ### My profile
 [@dev-aex](https://www.frontendmentor.io/profile/dev-aex)
 
-- # Completed challenges
+# Completed challenges
   1. Newbie challenges 🐣
      - [QR Code Component](./newbie/qr-code-component)
      - [Blog Preview Card](./newbie/blog-preview-card/)
