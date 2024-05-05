@@ -174,19 +174,6 @@ main {
 }
 @media (min-width: 1024px) {
   footer {
-    left: 39%;
-  }
-  .bg-top {
-    top: -60%;
-    left: -40%;
-  }
-  .bg-bottom {
-    top: 50%;
-    left: 45%;
-  }
-}
-@media (min-width: 1280px) {
-  footer {
     left: 42%;
   }
   .bg-top {
