@@ -21,6 +21,7 @@ body {
   min-height: fit-content;
   background-color: white;
   border-radius: 1.8rem;
+  box-shadow: 0 2rem 2rem hsl(223, 47%, 23%, 15%);
 }
 
 .card-img img {
@@ -90,7 +91,7 @@ body {
 }
 
 .card-plan a {
-  font-weight: 800;
+  font-weight: 700;
   font-size: 1.3rem;
   text-decoration: underline;
   color: hsl(245, 75%, 52%);
@@ -183,10 +184,10 @@ body {
 /* Media Queries */
 @media (min-width: 768px) {
   .card-content h1 {
-    margin-top: 2rem;
+    margin-top: 2.3rem;
     font-size: 2.8rem;
   }
-  
+
   .card-description {
     font-size: 1.7rem;
     padding-inline: 1.5rem;
@@ -210,17 +211,15 @@ body {
   .desktop-ptrn {
     display: block;
   }
-.card-content {
-  padding-block: 2.3rem;
-  padding-inline: 5rem;
-}
-
-.card-primary-btn {
-margin-top: 1rem;
-}
-
-.card-secundary-btn {
-  margin-top: 2.1rem;
-  margin-bottom: 1rem;
-}
+  .card-content {
+    padding-block: 2.3rem;
+    padding-inline: 5rem;
+  }
+  .card-primary-btn {
+    margin-top: 1rem;
+  }
+  .card-secundary-btn {
+    margin-top: 2.1rem;
+    margin-bottom: 1rem;
+  }
 }
