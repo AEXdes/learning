@@ -5,52 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="The AEX version of the Frontend Mentor challenge: NFT Preview Card Component Challenge"
+      content="My solution of the Frontend Mentor challenge: NFT Preview Card Component Challenge"
     />
     <meta name="”robots”" content="index, follow" />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="./assets/images/favicon-32x32.png"
     />
     <title>Frontend Mentor | NFT preview card component</title>
+    <!-- Reset -->
+    <link rel="stylesheet" href="../../reset.css" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <main>
-      <section id="card">
-        <div id="card-container">
-          <div id="card-image">
+      <section class="card">
+        <div class="card-container">
+          <div class="card-image">
             <img
-              id="equilibrium-img"
+              class="equilibrium-img"
               src="./assets/images/image-equilibrium.jpg"
               alt="equilibrium image"
             />
-            <div id="card-image-eye-icon">
-              <img src="./assets/images/icon-view.svg" alt="eye icon">
+            <div class="card-image-eye-icon">
+              <img src="./assets/images/icon-view.svg" alt="eye icon" />
             </div>
           </div>
-          <div id="card-content">
+          <div class="card-content">
             <a href="#"><h1>Equilibrium #3429</h1></a>
-            <p id="card-description">
+            <p class="card-description">
               Our Equilibrium collection promotes balance and calm.
             </p>
-            <div id="card-information">
-              <div id="card-ethereum">
+            <div class="card-information">
+              <div class="card-ethereum">
                 <img
                   src="./assets/images/icon-ethereum.svg"
                   alt="ethereum icon"
                 />
                 <span>0.041 ETH</span>
               </div>
-              <div id="card-timer">
+              <div class="card-timer">
                 <img src="./assets/images/icon-clock.svg" alt="clock icon" />
                 <span>3 days left</span>
               </div>
             </div>
             <hr />
-            <div id="card-profile">
+            <div class="card-profile">
               <img src="./assets/images/image-avatar.png" alt="avatar image" />
               <p>Creation of <a href="#">Jules Wyvern</a></p>
             </div>
@@ -58,14 +68,14 @@
         </div>
       </section>
     </main>
-
-    <!-- Footer information -->
+    <!-- Footer -->
     <footer>
       <section class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="https://github.com/AEXdes" target="_blank">AEX</a>.
+        >. Coded by
+        <a href="https://github.com/dev-aex" target="_blank">AEX</a>.
       </section>
     </footer>
   </body>
