@@ -13,7 +13,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
 .card-container {
@@ -139,7 +138,7 @@ body {
 
 .card-profile a {
   color: white;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 .card-profile p a:hover {
@@ -165,6 +164,14 @@ body {
 
 /* Media queries */
 @media (min-width: 768px) {
+  .card-content a h1 {
+    font-size: 2.3rem;
+  }
+  
+  .card-timer span {
+    font-size: 1.6rem;
+  }
+
   .card-description {
     font-size: 1.8rem;
     margin-bottom: 0.6rem;
@@ -177,5 +184,4 @@ body {
   .card-profile {
     margin-bottom: 1rem;
   }
-
 }
