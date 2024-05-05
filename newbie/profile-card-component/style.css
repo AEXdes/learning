@@ -78,7 +78,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 4.6rem;
+  gap: 5.3rem;
 }
 
 .card-data-followers,
@@ -92,8 +92,8 @@ main {
 .card-data-followers b,
 .card-data-likes b,
 .card-data-photos b {
-  font-size: 1.8rem;
-  font-weight: 800;
+  font-size: 1.9rem;
+  font-weight: 700;
 }
 
 .card-data-followers p,
@@ -190,8 +190,8 @@ main {
     left: 42%;
   }
   .bg-top {
-    top: -20%;
-    left: -20%;
+    top: -26rem;
+    left: -28rem;
   }
   .bg-bottom {
     top: 51%;
