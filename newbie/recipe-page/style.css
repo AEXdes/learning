@@ -1,56 +1,14 @@
-/* Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
-/* 
-.young-serif-regular {
-  font-family: "Young Serif", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-// <uniquifier>: Use a uniquifier for the class name
-// <weight>: Use a value from 100 to 900
 
-.outfit-<uniquifier> {
-  font-family: "Outfit", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-*/
-
-/* Variables */
-:root {
-  --nutmeg: hsl(14, 45%, 36%);
-  --dark-raspberry: hsl(332, 51%, 32%);
-  --white: hsl(0, 0%, 100%);
-  --rose-white: hsl(330, 100%, 98%);
-  --eggshell: hsl(30, 54%, 90%);
-  --light-grey: hsl(30, 18%, 87%);
-  --wenge-brown: hsl(30, 10%, 34%);
-  --dark-charcoal: hsl(24, 5%, 18%);
-  --blue: hsl(228, 45%, 44%);
-}
-
-/* Global Settings */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "Outfit", sans-serif;
-  color: var(--wenge-brown);
-}
-
-html {
-  font-size: 62.5%;
-}
-
+/* Global */
 body {
-  background-color: var(--eggshell);
+  font-family: "Outfit", sans-serif;
+  color: hsl(30, 10%, 34%);
+
+  background-color: hhsl(30, 54%, 90%);
 }
 
 /*------- main -------*/
 
-/* Classes */
 /* Sections-headers */
 .card-recipe__section-header {
   margin-bottom: 2rem;
@@ -58,7 +16,7 @@ body {
   font-family: "Young Serif", serif;
   font-size: 2.8rem;
   font-weight: 500;
-  color: var(--nutmeg);
+  color: hsl(14, 45%, 36%);
 }
 .card-recipe__text {
   margin-top: 2.2rem;
@@ -68,16 +26,15 @@ body {
   line-height: 2.4rem;
 }
 
-/* ID's */
 /* recipe-container__list-global-settings */
 main li::marker {
-  color: var(--nutmeg);
+  color: hsl(14, 45%, 36%);
   font-size: 1.2rem;
 }
 
 /* recipe-container */
 main #card-recipe__container {
-  background-color: var(--white);
+  background-color: white;
 }
 
 /* recipe-image */
@@ -95,7 +52,7 @@ main #card-recipe__container #card-recipe__description h1 {
   font-size: 3.6rem;
   font-weight: 500;
   line-height: 3.7rem;
-  color: var(--dark-charcoal);
+  color: hsl(24, 5%, 18%);
   font-family: "Young Serif", serif;
 }
 
@@ -114,7 +71,7 @@ main #card-recipe__container #card-recipe__preparation {
   margin-inline: 3.2rem;
   padding-inline: 2.3rem;
 
-  background-color: var(--rose-white);
+  background-color: hsl(330, 100%, 98%);
   border-radius: 1rem;
 }
 
@@ -123,7 +80,7 @@ main #card-recipe__container #card-recipe__preparation h2 {
   padding-top: 2rem;
 
   font-size: 2rem;
-  color: var(--dark-raspberry);
+  color: hsl(332, 51%, 32%);
 }
 
 /* preparation-time__list */
@@ -170,7 +127,7 @@ main #card-recipe__container #card-recipe__ingredients ul li {
 main hr {
   margin-inline: 3rem;
   margin-block: 3rem;
-  border: 0.001rem solid var(--light-grey);
+  border: 0.001rem solid hsl(30, 18%, 87%);
 }
 
 /* instructions__container */
@@ -192,7 +149,7 @@ main #card-recipe__container #card-recipe__instructions ol li {
 }
 
 main #card-recipe__container #card-recipe__instructions ol li::marker {
-  color: var(--nutmeg);
+  color: hsl(14, 45%, 36%);
   font-size: 1.6rem;
   font-weight: 600;
 }
@@ -222,7 +179,7 @@ main #card-recipe__container #card-recipe__nutrition th {
 }
 
 main #card-recipe__container #card-recipe__nutrition td {
-  color: var(--nutmeg);
+  color: hsl(14, 45%, 36%);
   font-weight: 700;
 }
 
@@ -236,17 +193,25 @@ td {
 }
 
 .bottom-line {
-  border-bottom: 0.1rem solid var(--light-grey);
+  border-bottom: 0.1rem solid hsl(30, 18%, 87%);
   border-collapse: collapse;
 }
 
-/*------ footer -------*/
-footer .attribution {
-  font-size: 1.3rem;
+/* Footer */
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-size: 1.1rem;
   text-align: center;
 }
-footer .attribution a {
-  color: var(--blue);
+
+.attribution a {
+  text-decoration: underline;
+  color: hsl(228, 45%, 44%);
 }
 
 /*------ media-queries -------*/
