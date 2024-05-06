@@ -309,7 +309,7 @@ body {
   }
 
   .results-component__score-text {
-    margin-top: 3rem;
+    margin-top: 2rem;
     font-size: 2rem;
     padding-inline: 1.5rem;
     font-weight: 400;
@@ -332,18 +332,18 @@ body {
   /* Summary score */
 
   .results-component__summary__score p {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   /* Summary Score /100 */
 
   .results-component__summary__score span {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   /* Summary categories */
   .results-component__summary,
   .results-component__summary__label-name {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .results-component__summary-reaction,
@@ -355,5 +355,8 @@ body {
   .results-component__summary h4 {
     margin-top: 5rem;
     font-size: 2.4rem;
+  }
+  .results-component__score h3 {
+    font-size: 3rem;
   }
 }
