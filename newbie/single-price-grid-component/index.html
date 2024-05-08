@@ -7,20 +7,30 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="./assets/images/favicon-32x32.png"
     />
     <meta
       name="description"
-      content="AEX solution of Single Price Grid Component Challenge"
+      content="My solution of Frontend Mentor: Single Price Grid Component Challenge"
     />
     <meta name="robots" content="index, follow" />
     <title>Frontend Mentor | Single Price Grid Component</title>
+    <!-- Reset -->
+    <link rel="stylesheet" href="../../reset.css" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <main>
-      <section id="card-prices__container">
-        <div id="card-prices__join">
+      <section class="card-prices__container">
+        <div class="card-prices__join">
           <h1>Join our community</h1>
           <h3>30-day, hassle-free money back guarantee</h3>
           <p class="card-prices--texts">
@@ -29,18 +39,18 @@
             their skills.
           </p>
         </div>
-        <div id="card-prices__subs">
+        <div class="card-prices__subs">
           <h2 class="card-prices--headers">Monthly Subscription</h2>
-          <div id="card-prices__subs-price">
+          <div class="card-prices__subs-price">
             <h3>&dollar;29</h3>
             <p>per month</p>
           </div>
-          <p id="card-prices__subs-text" class="card-prices--texts">
+          <p class="card-prices__subs-text card-prices--texts">
             Full access for less than &dollar;1 a day
           </p>
           <a href="#">Sign Up</a>
         </div>
-        <div id="card-prices__why">
+        <div class="card-prices__why">
           <h2 class="card-prices--headers">Why Us</h2>
           <p class="card-prices--texts">
             Tutorials by industry experts Peer &amp; expert code review Coding
@@ -51,13 +61,14 @@
       </section>
     </main>
 
-    <!-- Footer  -->
+    <!-- Footer -->
     <footer>
       <section class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="https://github.com/AEXdes" target="_blank">AEX</a>.
+        >. Coded by
+        <a href="https://github.com/dev-aex" target="_blank">AEX</a>.
       </section>
     </footer>
   </body>
