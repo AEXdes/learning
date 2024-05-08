@@ -1,57 +1,14 @@
-/*------ fonts -------*/
-@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap");
-
-/* 
-// <uniquifier>: Use a uniquifier for the class name
-// <weight>: Use a value from 100 to 900
-
-.big-shoulders display-<uniquifier> {
-  font-family: "Big Shoulders Display", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-
-// <uniquifier>: Use a uniquifier for the class name
-// <weight>: Use a value from 100 to 900
-
-.lexend-deca-<uniquifier> {
-  font-family: "Lexend Deca", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-*/
-/*------ variables -------*/
-:root {
-  --bright-orange: hsl(31, 77%, 52%);
-  --dark-cyan: hsl(184, 100%, 22%);
-  --very-dark-cyan: hsl(179, 100%, 13%);
-  --transparent-white: hsla(0, 0%, 100%, 0.75);
-  --very-light-gray: hsl(0, 0%, 95%);
-  --blue: hsl(228, 45%, 44%);
-}
 /*------ globals -------*/
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-}
-
-html {
-  font-size: 62.5%;
-}
 
 body {
   font-family: "Lexend Deca", sans-serif;
-  color: var(--transparent-white);
-  background-color: var(--very-light-gray);
+  color: hsla(0, 0%, 100%, 0.75);
+
+  background-color: hsl(0, 0%, 95%);
 }
 
 /*------ main -------*/
-
-main #card-carsTypes__container {
+.card-carsTypes__container {
   margin-block: 8.8rem;
   padding-inline: 2.4rem;
 
@@ -61,47 +18,46 @@ main #card-carsTypes__container {
 
 /* sedans */
 
-main #card-carsTypes__container #card-carsTypes__sedans {
-  background-color: var(--bright-orange);
+.card-carsTypes__sedans {
+  background-color: hsl(31, 77%, 52%);
   border-radius: 0.8rem 0.8rem 0 0;
 }
 
-main #card-carsTypes__container #card-carsTypes__sedans a {
-  color: var(--bright-orange);
+.card-carsTypes__sedans a {
+  color: hsl(31, 77%, 52%);
 }
-
 
 /* SUVs */
 
-main #card-carsTypes__container #card-carsTypes__suvs {
-  background-color: var(--dark-cyan);
+.card-carsTypes__suvs {
+  background-color: hsl(184, 100%, 22%);
 }
 
-main #card-carsTypes__container #card-carsTypes__suvs a {
-  color: var(--dark-cyan);
+.card-carsTypes__suvs a {
+  color: hsl(184, 100%, 22%);
 }
 
 /* luxury */
 
-main #card-carsTypes__container #card-carsTypes__luxury {
-  background-color: var(--very-dark-cyan);
+.card-carsTypes__luxury {
+  background-color: hsl(179, 100%, 13%);
   border-radius: 0 0 0.8rem 0.8rem;
 }
 
-main #card-carsTypes__container #card-carsTypes__luxury a {
-  color: var(--very-dark-cyan);
+.card-carsTypes__luxury a {
+  color: hsl(179, 100%, 13%);
 }
 
 /*------ classes ------*/
 
-main .card-carsTypes-column {
+.card-carsTypes-column {
   height: 44rem;
   padding: 4.85rem;
 }
 
 /* classes__headers */
 
-main .card-carsTypes-headers {
+.card-carsTypes-headers {
   margin-top: 3.3rem;
 
   font-family: "Big Shoulders Display", sans-serif;
@@ -111,7 +67,7 @@ main .card-carsTypes-headers {
 }
 
 /* classes__texts */
-main .card-carsTypes-texts {
+.card-carsTypes-texts {
   max-width: 40rem;
   margin-top: 2.5rem;
 
@@ -121,7 +77,7 @@ main .card-carsTypes-texts {
 }
 
 /* classes__buttons */
-main .card-carsTypes-buttons {
+.card-carsTypes-buttons {
   width: 14.5rem;
   height: 4.8rem;
   margin-top: 2.3rem;
@@ -133,53 +89,59 @@ main .card-carsTypes-buttons {
   font-size: 1.5rem;
   font-weight: 400;
 
-  background-color: var(--very-light-gray);
+  background-color: hsl(0, 0%, 95%);
   border-radius: 5rem;
 }
 
 /*------ interactions -------*/
 
-main #card-carsTypes__container #card-carsTypes__sedans a:hover {
-  color: var(--transparent-white);
+.card-carsTypes__sedans a:hover {
+  color: hsla(0, 0%, 100%, 0.75);
 }
 
-main #card-carsTypes__container #card-carsTypes__suvs a:hover {
-  color: var(--transparent-white);
+.card-carsTypes__suvs a:hover {
+  color: hsla(0, 0%, 100%, 0.75);
 }
 
-main #card-carsTypes__container #card-carsTypes__luxury a:hover {
-  color: var(--transparent-white);
+.card-carsTypes__luxury a:hover {
+  color: hsla(0, 0%, 100%, 0.75);
 }
 
-main .card-carsTypes-buttons:hover {
+.card-carsTypes-buttons:hover {
   background-color: transparent;
-  border: 0.3rem solid var(--transparent-white);
+  border: 0.3rem solid hsla(0, 0%, 100%, 0.75);
 }
 
-/*------ footer -------*/
+/* Footer */
 
-footer .attribution {
-  font-size: 1.3rem;
+.attribution {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-size: 1.1rem;
   text-align: center;
-  color: black;
+  color: hsl(228, 45%, 44%);
 }
-footer .attribution a {
-  color: var(--blue);
+
+.attribution a {
+  text-decoration: underline;
 }
 
 /*------ Media queries -------*/
 @media (min-width: 640px) {
   /*------ main/desktop -------*/
 
-main {
-  height: 100vh;
+  main {
+    height: 100vh;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-  main #card-carsTypes__container {
+  .card-carsTypes__container {
     margin-block: 0;
     padding-inline: 26rem;
 
@@ -191,39 +153,42 @@ main {
 
   /* sedans/desktop */
 
-  main #card-carsTypes__container #card-carsTypes__sedans {
-    background-color: var(--bright-orange);
+  .card-carsTypes__sedans {
+    background-color: hsl(31, 77%, 52%);
     border-radius: 0.8rem 0 0 0.8rem;
   }
 
   /* SUVs/desktop */
 
-  main #card-carsTypes__container #card-carsTypes__suvs {
-    background-color: var(--dark-cyan);
+  .card-carsTypes__suvs {
+    background-color: hsl(184, 100%, 22%);
   }
 
   /* luxury/desktop */
 
-  main #card-carsTypes__container #card-carsTypes__luxury {
-    background-color: var(--very-dark-cyan);
+  .card-carsTypes__luxury {
+    background-color: hsl(179, 100%, 13%);
     border-radius: 0 0.8rem 0.8rem 0;
   }
 
   /*------ classes ------*/
 
-  main .card-carsTypes-column {
+  .card-carsTypes-column {
     height: auto;
-    padding: 4.85rem;
+    padding-block: 4.85rem;
+    padding-left: 4.85rem;
+    padding-right: 3rem;
   }
 
   /* classes__buttons/desktop */
-  main .card-carsTypes-buttons {
+  .card-carsTypes-buttons {
     margin-top: 8rem;
   }
 
-  main .card-carsTypes-texts {
-    max-width: 15em;
+  .card-carsTypes-texts {
+    max-width: 20em;
     min-width: 10em;
-    font-weight: 300;
+    font-weight: 100;
+    line-height: 3rem;
   }
 }
