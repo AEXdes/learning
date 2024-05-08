@@ -1,41 +1,16 @@
-/*------- Fonts -------*/
-@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
-
-/*------- variables -------*/
-:root {
-  --very-dark-blue-mainBackground: hsl(233, 47%, 7%);
-  --dark-desaturated-blue-cardBackground: hsl(244, 38%, 16%);
-  --soft-violet-accent: hsl(277, 64%, 61%);
-  --white-mainHeadingStats: hsl(0, 0%, 100%);
-  --slightly-transparent-white-mainParagraph: hsla(0, 0%, 100%, 0.75);
-  --slightly-transparent-white-statHeadings: hsla(0, 0%, 100%, 0.6);
-  --blue: hsl(228, 45%, 44%);
-}
-
-/*------- global-settings -------*/
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  font-size: 62.5%;
-}
+/*------- globals -------*/
 
 body {
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  color: var(--white-mainHeadingStats);
+  color: hsl(0, 0%, 100%);
 
-  background-color: var(--very-dark-blue-mainBackground);
+  background-color: hsl(233, 47%, 7%);
 }
 
 /*------- main -------*/
 main {
-  margin-bottom: 5rem;
-
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,22 +18,19 @@ main {
 }
 
 /* card-stats__container */
-main #card-stats__container {
+.card-stats__container {
   width: 32.5rem;
-
-  margin-top: 8.5rem;
 
   display: grid;
   grid-template-rows: auto 1fr;
 
-  background-color: var(--dark-desaturated-blue-cardBackground);
+  background-color: hsl(244, 38%, 16%);
   border-radius: 0.7rem;
 
   text-align: center;
 }
 
-/* card-stats__image */
-main #card-stats__container #card-stats__image {
+.card-stats__image {
   width: 100%;
   height: 99%;
   position: relative;
@@ -66,7 +38,7 @@ main #card-stats__container #card-stats__image {
   overflow: hidden;
 }
 
-main #card-stats__container #card-stats__image-overlay {
+.card-stats__image-overlay {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -74,21 +46,19 @@ main #card-stats__container #card-stats__image-overlay {
   border-radius: 0.7rem 0.7rem 0 0;
 }
 
-main #card-stats__container #card-stats__image picture img {
+.card-stats__image picture img {
   width: 100%;
   height: auto;
 
   border-radius: 0.7rem 0.7rem 0 0;
 }
 
-/* card-stats__content */
-
-main #card-stats__container #card-stats__content {
+.card-stats__content {
   margin-top: 0.5rem;
   padding-inline: 3rem;
 }
 
-main #card-stats__container #card-stats__content h1 {
+.card-stats__content h1 {
   margin-top: 3.2rem;
   margin-bottom: 1.9rem;
 
@@ -97,12 +67,11 @@ main #card-stats__container #card-stats__content h1 {
   font-weight: 600;
 }
 
-main #card-stats__container #card-stats__content span {
-  color: var(--soft-violet-accent);
+.card-stats__content span {
+  color: hsl(277, 64%, 61%);
 }
 
-/* card-stats__content-data */
-main #card-stats__container #card-stats__content #card-stats__content-data {
+.card-stats__content-data {
   margin-top: 3.4rem;
   margin-bottom: 3.4rem;
 
@@ -111,7 +80,6 @@ main #card-stats__container #card-stats__content #card-stats__content-data {
   gap: 3rem;
 }
 
-/* main__classes */
 .card-stats__content-headers {
   font-size: 2.4rem;
   font-weight: 600;
@@ -120,8 +88,9 @@ main #card-stats__container #card-stats__content #card-stats__content-data {
 .card-stats__content-text {
   font-size: 1.5rem;
   line-height: 2.6rem;
-  color: var(--slightly-transparent-white-statHeadings);
+  color: hsla(0, 0%, 100%, 0.6);
 }
+
 .card-stats__content-text-caps {
   font-family: "Lexend Deca", sans-serif;
   font-size: 1.7rem;
@@ -129,13 +98,21 @@ main #card-stats__container #card-stats__content #card-stats__content-data {
   letter-spacing: 0.1rem;
 }
 
-/*------ footer -------*/
-footer .attribution {
-  font-size: 1.3rem;
+/* Footer */
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-size: 1.1rem;
   text-align: center;
 }
-footer .attribution a {
-  color: var(--blue);
+
+.attribution a {
+  text-decoration: underline;
+  color: hsl(228, 45%, 44%);
 }
 
 /*------ Media Queries -------*/
@@ -151,7 +128,7 @@ footer .attribution a {
   }
 
   /* card-stats__container///desktop */
-  main #card-stats__container {
+  .card-stats__container {
     width: 111rem;
     height: 44.5rem;
 
@@ -161,18 +138,18 @@ footer .attribution a {
     grid-template-columns: 1fr 1fr;
   }
 
-  main #card-stats__container #card-stats__image-overlay {
+  .card-stats__image-overlay {
     border-radius: 0 0.7rem 0.7rem 0;
   }
 
   /* card-stats__content///desktop */
-  main #card-stats__container #card-stats__content {
+  .card-stats__content {
     margin-top: 0;
     padding-inline: 7rem;
     padding-right: 9rem;
   }
 
-  main #card-stats__container #card-stats__content h1 {
+  .card-stats__content h1 {
     margin-top: 7rem;
     margin-bottom: 2.4rem;
 
@@ -182,14 +159,14 @@ footer .attribution a {
   }
 
   /* card-stats__image///desktop */
-  main #card-stats__container #card-stats__image {
+  .card-stats__image {
     width: auto;
     height: 100%;
     order: 2;
     border-radius: 0 0.7rem 0.7rem 0;
   }
 
-  main #card-stats__container #card-stats__image picture img {
+  .card-stats__image picture img {
     width: 100%;
     height: auto;
 
@@ -197,7 +174,7 @@ footer .attribution a {
   }
 
   /* card-stats__content-data///desktop */
-  main #card-stats__container #card-stats__content #card-stats__content-data {
+  .card-stats__content-data {
     margin-top: 8rem;
     padding-right: 3rem;
 
@@ -220,7 +197,7 @@ footer .attribution a {
     font-size: 1.5rem;
     line-height: 2.6rem;
     text-align: left;
-    color: var(--slightly-transparent-white-statHeadings);
+    color: hsla(0, 0%, 100%, 0.6);
   }
   .card-stats__content-text-caps {
     font-family: "Lexend Deca", sans-serif;

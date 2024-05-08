@@ -13,18 +13,27 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="./assets/images/favicon-32x32.png"
     />
 
     <title>Frontend Mentor | Stats preview card component</title>
-
+    <!-- Reset -->
+    <link rel="stylesheet" href="../../reset.css" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <main>
-      <section id="card-stats__container">
-        <div id="card-stats__image">
-          <div id="card-stats__image-overlay"></div>
+      <section class="card-stats__container">
+        <div class="card-stats__image">
+          <div class="card-stats__image-overlay"></div>
           <picture>
             <source
               media="(min-width: 1024px)"
@@ -38,26 +47,26 @@
             />
           </picture>
         </div>
-        <div id="card-stats__content">
+        <div class="card-stats__content">
           <h1>Get <span>insights</span> that help your business grow.</h1>
           <p class="card-stats__content-text">
             Discover the benefits of data analytics and make better decisions
             regarding revenue, customer experience, and overall efficiency.
           </p>
-          <div id="card-stats__content-data">
-            <div id="card-stats__content-data-companies">
+          <div class="card-stats__content-data">
+            <div class="card-stats__content-data-companies">
               <h2 class="card-stats__content-headers">10k+</h2>
               <p class="card-stats__content-text card-stats__content-text-caps">
                 companies
               </p>
             </div>
-            <div id="card-stats__content-data-templates">
+            <div class="card-stats__content-data-templates">
               <h2 class="card-stats__content-headers">314</h2>
               <p class="card-stats__content-text card-stats__content-text-caps">
                 templates
               </p>
             </div>
-            <div id="card-stats__content-data-queries">
+            <div class="card-stats__content-data-queries">
               <h2 class="card-stats__content-headers">12M+</h2>
               <p class="card-stats__content-text card-stats__content-text-caps">
                 queries
@@ -68,13 +77,14 @@
       </section>
     </main>
 
-    <!-- Footer  -->
+    <!-- Footer -->
     <footer>
       <section class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="https://github.com/AEXdes" target="_blank">AEX</a>.
+        >. Coded by
+        <a href="https://github.com/dev-aex" target="_blank">AEX</a>.
       </section>
     </footer>
   </body>
