@@ -24,6 +24,7 @@ Frontend Mentor is a website that offers web development challenges at various l
      - [Huddle landing page with a single introductory section](./newbie/huddle-landing-page-with-single-introductory-section/)
      - [Social proof section](./newbie/social-proof-section/)
      - [Four Card Feature Section](./newbie/four-card-feature-section/)
+     - [FAQ Accordion](./newbie/faq-accordion/)
 
 # Build With
 - HTML5
