@@ -1,0 +1,148 @@
+/* Globals */
+body {
+  background-image: url("./images/background-pattern-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-color: hsl(275, 100%, 97%);
+  font-family: "Work Sans", sans-serif;
+  color: hsl(292, 42%, 14%);
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: inline;
+}
+
+/* Main */
+
+main {
+  height: 100vh;
+
+  padding-inline: 2.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+hr {
+  color: hsl(275, 100%, 97%);
+}
+
+.faq-card {
+  height: fit-content;
+  width: fit-content;
+
+  padding-inline: 2.5rem;
+  padding-top: 2.3rem;
+  padding-bottom: 0.2rem;
+
+  background-color: white;
+  border-radius: 0.8rem;
+
+  box-shadow: 0 2rem 3rem 1rem hsl(292, 16%, 49%, 10%);
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.title-container h1 {
+  font-size: 3.2rem;
+  font-weight: 800;
+}
+
+.title-container svg {
+  width: 2.4rem;
+}
+
+.faq-container {
+  margin-block: 2rem;
+}
+
+.faq-header {
+  margin-bottom: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.faq-title {
+  width: fit-content;
+}
+
+.faq-title h2 {
+  font-weight: 700;
+  text-wrap: balance;
+}
+
+.faq-title h2:hover {
+  color: #ad28eb;
+}
+
+.faq-answer p {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: hsl(292, 16%, 49%);
+}
+
+/* Footer */
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.attribution a {
+  text-decoration: underline;
+  color: hsl(228, 45%, 44%);
+}
+
+/* Media queries */
+@media (min-width: 768px) {
+  /* Globals */
+  body {
+    background-image: url("./images/background-pattern-desktop.svg");
+  }
+  .faq-card {
+  
+    padding-inline: 4rem;
+    padding-top: 3.8rem;
+    padding-bottom: 1rem;
+  }
+  .title-container {
+    margin-bottom: 3rem;
+  }
+  .title-container h1 {
+    font-size: 5.6rem;
+    font-weight: 700;
+  }
+  .title-container svg {
+    width: 3.8rem;
+  }
+  .faq-title h2 {
+    margin-right: 3.2rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-wrap: balance;
+  }
+  .faq-answer {
+    width: 52rem;
+  }
+  .faq-answer p {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: hsl(292, 16%, 49%);
+  }
+  
+}
