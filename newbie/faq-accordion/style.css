@@ -12,10 +12,6 @@ body {
   display: none;
 }
 
-.visible {
-  display: inline;
-}
-
 /* Main */
 
 main {
@@ -35,7 +31,6 @@ hr {
 .faq-card {
   height: fit-content;
   width: fit-content;
-
   padding-inline: 2.5rem;
   padding-top: 2.3rem;
   padding-bottom: 0.2rem;
