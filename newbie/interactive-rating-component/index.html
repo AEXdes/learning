@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <meta
+      name="description"
+      content="My solution of the Frontend Mentor challenge: Interactive Rating Component"
+    />
+    <meta name="”robots”" content="index, follow" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Interactive rating component</title>
+    <!-- Reset -->
+    <link rel="stylesheet" href="../../reset.css" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <!-- rating state -->
+      <article class="card-rating__container" id="rating-card">
+        <section class="card-rating__icon">
+          <img src="./images/icon-star.svg" alt="Rating star" />
+        </section>
+        <header class="card-header">
+          <h1>How did we do?</h1>
+        </header>
+        <section>
+          <p class="card-text">
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+        </section>
+        <section class="card-rating__scale">
+          <button id="rating-btn1" class="card-rating__scale-btn">1</button
+          ><button id="rating-btn2" class="card-rating__scale-btn">2</button
+          ><button id="rating-btn3" class="card-rating__scale-btn">3</button
+          ><button id="rating-btn4" class="card-rating__scale-btn">4</button
+          ><button id="rating-btn5" class="card-rating__scale-btn">5</button>
+        </section>
+        <section>
+          <button class="card-rating__btn" id="rating-submit">Submit</button>
+        </section>
+      </article>
+      <!-- thanks you state -->
+      <article
+        class="card-rating__container card-thanks__container hidden"
+        id="thanks-card"
+      >
+        <section class="card-illustration">
+          <img src="./images/illustration-thank-you.svg" alt="Thanks you" />
+        </section>
+        <section class="rating-selected">
+          You selected&nbsp;<span id="rate-submitted"></span>&nbsp;out of 5
+        </section>
+        <section class="rating-card__content">
+          <h2>Thank you!</h2>
+          <p class="rating-card-text">
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don’t hesitate to get in touch!
+          </p>
+        </section>
+      </article>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <section class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/dev-aex" target="_blank">AEX</a>.
+      </section>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,268 @@
+/* Globals */
+body {
+  font-family: "Overpass", sans-serif;
+  color: white;
+
+  background-color: hsl(216, 12%, 8%);
+}
+
+/* Main */
+
+main {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Rating state */
+
+.card-rating__container {
+  max-width: 41rem;
+  margin-inline: 2.5rem;
+  padding-block: 2.5rem;
+  padding-inline: 2.3rem;
+
+  background: rgb(21, 25, 31);
+  background: linear-gradient(
+    0deg,
+    rgb(26, 31, 39) 0%,
+    rgba(37, 45, 55, 1) 100%
+  );
+  border-radius: 1.5rem;
+}
+
+.card-rating__icon {
+  width: fit-content;
+  height: fit-content;
+
+  margin-bottom: 2rem;
+  padding: 1.3rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: hsl(216, 12%, 54%, 10%);
+  border-radius: 100%;
+  box-shadow: 0 0.2rem 0.5rem hsl(216, 12%, 8%, 10%);
+}
+
+.card-rating__icon img {
+  width: 1.4rem;
+  height: auto;
+}
+
+.card-header h1 {
+  margin-bottom: 1.3rem;
+
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+.card-text {
+  margin-bottom: 3rem;
+
+  font-size: 1.35rem;
+  line-height: 2.2rem;
+  font-weight: 700;
+  text-wrap: pretty;
+  color: hsl(216, 12%, 54%);
+}
+
+.card-rating__scale {
+  margin-bottom: 2rem;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-rating__scale-btn {
+  width: 4.2rem;
+  height: 4.2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.3rem;
+  color: hsl(0, 0%, 100%, 50%);
+  font-weight: 600;
+
+  background-color: hsl(216, 12%, 54%, 10%);
+  border-radius: 100%;
+  box-shadow: 0 0.2rem 0.5rem hsl(216, 12%, 8%, 10%);
+}
+
+.card-rating__scale-btn:hover {
+  color: white;
+  font-weight: 800;
+  background-color: hsl(25, 97%, 53%);
+}
+
+.card-rating__btn-selected {
+  background-color: hsl(217, 12%, 63%);
+  color: white;
+}
+
+.card-rating__btn {
+  width: 100%;
+  height: 4.5rem;
+  margin-bottom: 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.35rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+
+  background-color: hsl(25, 97%, 53%);
+  border-radius: 5rem;
+  box-shadow: 0 0.2rem 0.5rem hsl(216, 12%, 8%, 10%);
+}
+
+.card-rating__btn:hover {
+  font-weight: 700;
+  color: hsl(25, 97%, 53%);
+  background-color: white;
+}
+
+.card-thanks__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  text-align: center;
+}
+.card-illustration img {
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+  width: 14.5rem;
+}
+
+.rating-selected {
+  margin-bottom: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-inline: 1.3rem;
+  padding-block: 0.8rem;
+
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: 0.07rem;
+  color: hsl(25, 97%, 53%);
+
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 10rem;
+}
+
+.rating-card__content h2 {
+  margin-bottom: 1.4rem;
+
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.rating-card-text {
+  margin-bottom: 1.7rem;
+
+  font-size: 1.35rem;
+  line-height: 2.2rem;
+  font-weight: 700;
+  text-wrap: pretty;
+  color: hsl(216, 12%, 54%);
+}
+
+.hidden {
+  display: none;
+}
+
+/* Footer */
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.attribution a {
+  text-decoration: underline;
+  color: hsl(228, 45%, 44%);
+}
+
+/* Media queries */
+
+@media (min-width: 640px) {
+  .card-rating__container {
+    margin-inline: 2.5rem;
+    padding-block: 3.1rem;
+    padding-inline: 3.4rem;
+    border-radius: 2.8rem;
+  }
+  .card-rating__icon {
+    margin-bottom: 3.4rem;
+    padding: 1.4rem;
+  }
+  .card-rating__icon img {
+    width: 1.7rem;
+  }
+  .card-header h1 {
+    margin-bottom: 1.3rem;
+
+    font-size: 2.8rem;
+  }
+  .card-text {
+    margin-bottom: 3rem;
+
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    text-wrap: pretty;
+    color: hsl(216, 12%, 54%);
+  }
+  .card-rating__scale-btn {
+    width: 4.9rem;
+    height: 4.9rem;
+    font-size: 1.6rem;
+  }
+  .card-rating__scale {
+    margin-bottom: 2.8rem;
+  }
+  .card-rating__btn {
+    margin-bottom: 0;
+  }
+  /* Rating state */
+  .card-illustration {
+    margin-bottom: 1rem;
+  }
+  .card-illustration img {
+    width: 16rem;
+  }
+  .rating-selected {
+    margin-bottom: 1rem;
+    padding-inline: 2rem;
+  
+    font-size: 1.45rem;
+    letter-spacing: 0.08rem;
+  }
+  .rating-card__content h2 {
+    margin-bottom: 1.2rem;
+
+    font-size: 2.8rem;
+  }
+  .rating-card-text {
+    font-size: 1.45rem;
+  }
+}
