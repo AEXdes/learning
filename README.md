@@ -25,6 +25,7 @@ Frontend Mentor is a website that offers web development challenges at various l
      - [Social proof section](./newbie/social-proof-section/)
      - [Four Card Feature Section](./newbie/four-card-feature-section/)
      - [FAQ Accordion](./newbie/faq-accordion/)
+     - [Interactive Rating Component](./newbie/interactive-rating-component/)
 
 # Build With
 - HTML5
