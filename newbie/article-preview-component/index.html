@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Article preview component</title>
+    <!-- Reset -->
+    <link rel="stylesheet" href="../../reset.css" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <article class="card-container">
+        <section class="card-img-container"></section>
+        <section class="card-text">
+          <div class="card-content-container">
+            <header class="card-header-container">
+              <h1>
+                Shift the overall look and feel by adding these wonderful
+                touches to furniture in your home
+              </h1>
+            </header>
+            <p>
+              Ever been in a room and felt like something was missing? Perhaps
+              it felt slightly bare and uninviting. I’ve got some simple tips to
+              help you make any room feel complete.
+            </p>
+          </div>
+          <div class="card-profile-container">
+            <div class="card-profile">
+              <img
+                class="card-profile-img"
+                src="./images/avatar-michelle.jpg"
+                alt="Picture of Michelle Appleton"
+              />
+              <div class="card-profile-content">
+                <h2>Michelle Appleton</h2>
+                <p>28 Jun 2020</p>
+              </div>
+            </div>
+            <section id="card-share-container" class="card-share-container">
+              <div id="card-share-btn1" class="card-share-btn__container">
+                <img
+                  id="card-share__btn"
+                  class="card-share__btn"
+                  src="./images/icon-share.svg"
+                  alt="Share content"
+                />
+              </div>
+            </section>
+            <section id="share-bar" class="card-share-bar hidden">
+              <div class="card-share-bar__content">
+                <h3>Share</h3>
+                <a href="#">
+                  <img
+                    src="./images/icon-facebook.svg"
+                    alt="Share to Facebook"
+                  />
+                </a>
+                <a href="#">
+                  <img src="./images/icon-twitter.svg" alt="Share to Twitter" />
+                </a>
+                <a href="#">
+                  <img
+                    src="./images/icon-pinterest.svg"
+                    alt="Share to Pinterest"
+                  />
+                </a>
+              </div>
+              <div class="card-share-btn__container share-btn--invert">
+                <img
+                  class="card-share__btn card-share__btn--white"
+                  src="./images/icon-share.svg"
+                  alt="Share content"
+                />
+              </div>
+              <div class="card-share-triangle"></div>
+            </section>
+          </div>
+        </section>
+      </article>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <section class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/dev-aex" target="_blank">AEX</a>.
+      </section>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,296 @@
+/* Globals */
+body {
+  background-color: hsl(210, 46%, 95%);
+  font-family: "Manrope", sans-serif;
+  color: hsl(217, 19%, 35%);
+}
+
+div.card-share-btn__container--grey {
+  background-color: hsl(214, 17%, 51%);
+}
+
+/* Main */
+main {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  width: fit-content;
+  height: fit-content;
+
+  margin: 2.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: white;
+  border-radius: 1rem;
+
+  box-shadow: 0 1rem 3rem hsl(217, 19%, 35%, 10%);
+}
+
+.card-img-container {
+  width: 100%;
+  height: 19.8rem;
+
+  background-image: url("./images/drawers.jpg");
+  background-position: 0 26%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  border-radius: 1rem 1rem 0 0;
+}
+
+.card-content-container {
+  padding-top: 3.7rem;
+  padding-bottom: 1rem;
+  padding-inline: 3rem;
+}
+
+.card-header-container {
+  margin-bottom: 1.4rem;
+}
+
+.card-header-container h1 {
+  line-height: 2.4rem;
+  font-weight: 800;
+}
+
+.card-content-container p {
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 2rem;
+  color: hsl(212, 23%, 69%);
+}
+
+.card-profile-container {
+  width: 100%;
+
+  padding-inline: 3rem;
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+}
+
+.card-profile-img {
+  width: 4rem;
+  border-radius: 100%;
+}
+
+.card-profile-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card-profile-content h2 {
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+
+.card-profile-content p {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: hsl(212, 23%, 69%);
+}
+
+.card-share-btn__container {
+  width: 3.2rem;
+  height: 3.2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: hsl(210, 46%, 95%);
+  border-radius: 100%;
+
+  cursor: pointer;
+}
+
+.card-share__btn {
+  width: 1.5rem;
+  height: auto;
+}
+
+.card-share-bar {
+  width: 100%;
+  height: 100%;
+
+  padding-block: 2rem;
+  padding-inline: 3rem;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: hsl(217, 19%, 35%);
+  border-radius: 0 0 1rem 1rem;
+}
+
+.card-share-bar__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.7rem;
+}
+
+.card-share-bar__content h3 {
+  font-size: 1.2rem;
+  letter-spacing: 0.6rem;
+  text-transform: uppercase;
+  color: hsl(212, 23%, 69%);
+}
+
+.share-btn--invert {
+  background-color: hsl(214, 17%, 51%);
+}
+
+.card-share__btn--white {
+  filter: invert(88%) sepia(0) saturate(342%) hue-rotate(180deg)
+    brightness(505%) contrast(100%);
+}
+
+.card-share-triangle {
+  display: none;
+}
+
+/* Footer */
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.attribution a {
+  text-decoration: underline;
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 648px) {
+  .card-container {
+    max-width: 73rem;
+    height: 28rem;
+
+    margin: 2.5rem;
+
+    display: flex;
+    flex-direction: row;
+  }
+  .card-content-container {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    padding-inline: 4rem;
+  }
+  .card-profile-container {
+    padding-inline: 4rem;
+    padding-top: 1rem;
+    padding-bottom: 1.6rem;
+  }
+
+  .card-img-container {
+    width: 100%;
+    height: 100%;
+
+    background-position: 0 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border-radius: 1rem 0 0 1rem;
+  }
+  .card-header-container h1 {
+    font-size: 2rem;
+    line-height: 2.8rem;
+    font-weight: 800;
+  }
+
+  .card-content-container p {
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 2rem;
+    color: hsl(212, 23%, 69%);
+  }
+
+  .card-share-bar {
+    width: fit-content;
+    height: 5.5rem;
+
+    padding-block: 2rem;
+    padding-inline: 3.8rem;
+
+    position: absolute;
+    top: -7rem;
+    left: 26.5rem;
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1rem;
+  }
+
+  .card-share-bar__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .card-share-bar__content h3 {
+    font-size: 1.2rem;
+    letter-spacing: 0.6rem;
+    text-transform: uppercase;
+    color: hsl(212, 23%, 69%);
+  }
+  .share-btn--invert {
+    display: none;
+  }
+  .card-share-triangle {
+    display: block;
+    width: 0;
+    height: 0;
+
+    position: absolute;
+    bottom: -2rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border-left: 1.5rem solid transparent;
+    border-right: 1.5rem solid transparent;
+    border-top: 1.5rem solid hsl(217, 19%, 35%);
+  }
+}
+
+.hidden {
+  display: none;
+}
