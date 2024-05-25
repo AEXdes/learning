@@ -1,0 +1,255 @@
+/* Globals */
+body {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  text-align: center;
+
+  background-image: url("./images/bg-intro-mobile.png");
+  background-repeat: repeat-y;
+  background-size: cover;
+  background-color: hsl(0, 100%, 74%);
+}
+
+/* main */
+
+.main-container {
+  padding-top: 9rem;
+  padding-bottom: 3rem;
+  padding-inline: 2.4rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-container {
+  margin-bottom: 9rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.2rem;
+}
+
+.header__title {
+  width: 25rem;
+  height: auto;
+
+  font-size: 2.7rem;
+  font-weight: 700;
+  line-height: 3.7rem;
+}
+
+.header__text {
+  font-size: 1.5rem;
+  line-height: 2.6rem;
+}
+
+.from__title-container {
+  height: 8.8rem;
+  margin-bottom: 2.2rem;
+  padding-inline: 6rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.55rem;
+  font-weight: 200;
+  line-height: 2.7rem;
+
+  background-color: hsl(248, 32%, 49%);
+  border-radius: 1rem;
+  box-shadow: 0 0.8rem 0 hsla(249, 10%, 26%, 25%);
+}
+
+.from__title strong {
+  font-weight: 600;
+}
+
+.form {
+  padding-block: 2.4rem;
+  padding-inline: 2.4rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 0.8rem 0 hsla(249, 10%, 26%, 25%);
+}
+
+.input__container {
+  position: relative;
+}
+
+.form__input {
+  width: 100%;
+  height: 5.6rem;
+  padding-inline: 3rem;
+
+  font-size: 1.45rem;
+  font-weight: 600;
+  color: black;
+  text-align: left;
+
+  border: 0.1rem solid hsl(245, 14%, 82%);
+}
+
+.form__input::placeholder {
+  font-weight: 600;
+  text-align: left;
+}
+
+.form__input:focus {
+  outline-color: black;
+}
+
+.error__icon {
+  width: 2rem;
+
+  position: absolute;
+  top: 36%;
+  right: 1%;
+  transform: translate(-50%, -50%);
+}
+
+.error__msg {
+  margin-top: 0.5rem;
+  text-align: right;
+  font-size: 1.4rem;
+  color: hsl(0, 100%, 74%);
+}
+
+.form__btn {
+  height: 5.4rem;
+
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+
+  background-color: hsl(154, 59%, 51%);
+  border-radius: 0.7rem;
+  box-shadow: 0 0.3rem 0 hsl(153, 59%, 41%);
+}
+
+.form__disclaimer {
+  width: 24rem;
+  margin: 0 auto;
+
+  font-size: 1.1rem;
+  line-height: 2rem;
+  color: hsl(246, 25%, 77%);
+}
+
+.form__disclaimer strong {
+  color: hsl(0, 100%, 74%);
+}
+
+/* Footer */
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.attribution a {
+  text-decoration: underline;
+  color: hsl(228, 45%, 44%);
+}
+
+/* Media queries */
+
+@media (min-width: 640px) {
+  body {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    text-align: center;
+
+    background-image: url("./images/bg-intro-desktop.png");
+    background-repeat: repeat;
+    background-size: cover;
+  }
+
+  .main-container {
+    /* padding-top: 9rem;
+    padding-bottom: 3rem; */
+    padding-inline: 16rem;
+
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .header-container {
+    margin-bottom: 0;
+
+    align-items: flex-start;
+    gap: 2.2rem;
+
+    text-align: left;
+  }
+
+  .header__title {
+    width: 60rem;
+
+    font-size: 5rem;
+    line-height: 6rem;
+  }
+
+  .header__text {
+    width: 53rem;
+
+    font-size: 1.5rem;
+    line-height: 2.6rem;
+  }
+
+  .form {
+    width: 53rem;
+    padding: 4rem;
+
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+  
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 0.8rem 0 hsla(249, 10%, 26%, 25%); */
+  }
+
+  .from__title-container {
+    height: 6rem;
+    /* margin-bottom: 2.2rem;
+    padding-inline: 6rem;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    font-size: 1.55rem;
+    
+    line-height: 2.7rem;
+  
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 1rem;
+    box-shadow: 0 0.8rem 0 hsla(249, 10%, 26%, 25%); */
+  }
+
+  .form__disclaimer {
+    width: 40rem;
+    /* margin: 0 auto;
+
+    font-size: 1.1rem;
+    line-height: 2rem;
+    color: hsl(246, 25%, 77%); */
+  }
+}

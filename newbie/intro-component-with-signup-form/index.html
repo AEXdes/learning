@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="AEX solution of the Frontend Mentor challenge: Intro Component with Signup Form"
+    />
+    <meta name="”robots”" content="index, follow" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Intro component with sign up form</title>
+    <!-- Reset -->
+    <link rel="stylesheet" href="../../reset.css" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- main -->
+    <main class="main-container">
+      <header class="header-container">
+        <h1 class="header__title">Learn to code by watching others</h1>
+        <p class="header__text">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </header>
+      <article class="form-container">
+        <section class="from__title-container">
+          <h2 class="from__title">
+            <strong>Try it free 7 days</strong> then $20/mo. thereafter
+          </h2>
+        </section>
+        <section class="form">
+          <div class="input__container">
+            <input
+              id="first-name-input"
+              class="form__input"
+              type="text"
+              placeholder="First name"
+            />
+            <!-- <img
+              class="error__icon"
+              src="./images/icon-error.svg"
+              alt="Error"
+            /> -->
+            <!-- <p class="error__msg">First Name cannot be empty</p> -->
+          </div>
+          <div class="input__container">
+            <input
+              id="last-name-input"
+              class="form__input"
+              type="text"
+              placeholder="Last name"
+            />
+          </div>
+          <div class="input__container">
+            <input
+              id="email-input"
+              class="form__input"
+              type="text"
+              placeholder="Email address"
+            />
+          </div>
+          <div class="input__container">
+            <input
+              id="password-input"
+              class="form__input"
+              type="text"
+              placeholder="Password"
+            />
+          </div>
+          <button class="form__btn">Claim your free trial</button>
+          <p class="form__disclaimer">
+            By clicking the button, you are agreeing to our
+            <strong>Terms and Services</strong>
+          </p>
+        </section>
+      </article>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <section class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/dev-aex" target="_blank">AEX</a>.
+      </section>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
