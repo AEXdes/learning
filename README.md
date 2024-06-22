@@ -29,6 +29,7 @@ Frontend Mentor is a website that offers web development challenges at various l
      - [Article Preview Component](./newbie/article-preview-component/)
      - [Base Apparel Coming Soon](./newbie/base-apparel-coming-soon/)
      - [Into Component With Signup Form](./newbie/intro-component-with-signup-form/)
+     - [Ping Coming Soon Page](./newbie/ping-coming-soon-page/)
 
 # Build With
 - HTML

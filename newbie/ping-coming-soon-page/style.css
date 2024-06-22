@@ -1,0 +1,246 @@
+body {
+  font-family: "Libre Franklin", sans-serif;
+  text-align: center;
+}
+
+.wrapper {
+  margin-block: 17rem;
+  margin-inline: 5rem;
+}
+
+.logo {
+  width: 10.8rem;
+}
+
+.subtitle {
+  margin-top: 8rem;
+  margin-bottom: 4rem;
+
+  font-size: 4.4rem;
+  font-weight: 300;
+  color: hsl(0, 0%, 59%);
+}
+
+.subtitle__bold {
+  font-weight: 800;
+  color: hsl(209, 33%, 12%);
+}
+
+.subscribe {
+  font-size: 2.4rem;
+}
+
+.email__container {
+  margin-top: 6rem;
+  margin-inline: 4.3rem;
+  margin-bottom: 13rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.email__input {
+  width: 100%;
+  height: 3rem;
+  padding: 4rem;
+  padding-left: 6rem;
+
+  font-size: 2.4rem;
+  text-align: left;
+
+  border: 0.2rem solid hsl(0, 0%, 80%);
+  border-radius: 5rem;
+}
+
+.email__input--error {
+  outline-color: hsl(0, 93%, 68%);
+}
+
+.email__input::placeholder {
+  font-size: 2.4rem;
+  font-weight: 300;
+  text-align: left;
+  color: hsl(0, 0%, 80%);
+}
+
+.email__error {
+  margin-top: 1rem;
+
+  font-size: 2rem;
+  font-style: italic;
+  color: hsl(354, 100%, 66%);
+}
+
+.email__btn {
+  margin-top: 2rem;
+  width: 100%;
+  height: 8rem;
+
+  font-size: 2.5rem;
+  color: white;
+
+  background-color: hsl(223, 87%, 63%);
+  border-radius: 6rem;
+}
+
+.email__btn:hover {
+  background-color: hsl(223, 78%, 75%);
+}
+
+.illustration {
+  width: 100%;
+}
+
+.social {
+  margin-top: 24rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.social__facebook,
+.social__twitter,
+.social__instagram {
+  width: 6rem;
+  height: 6rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 0.1rem solid hsl(0, 0%, 80%);
+  border-radius: 100%;
+}
+
+.social__facebook svg {
+  width: 1.8rem;
+  filter: invert(43%) sepia(22%) saturate(4621%) hue-rotate(208deg)
+    brightness(99%) contrast(93%);
+}
+
+.social__twitter svg {
+  width: 2.8rem;
+  filter: invert(43%) sepia(22%) saturate(4621%) hue-rotate(208deg)
+    brightness(99%) contrast(93%);
+}
+
+.social__instagram svg {
+  width: 2.8rem;
+  filter: invert(43%) sepia(22%) saturate(4621%) hue-rotate(208deg)
+    brightness(99%) contrast(93%);
+}
+
+.copyright {
+  margin-top: 6rem;
+  font-size: 2rem;
+  color: hsl(0, 0%, 59%);
+}
+
+/* Footer */
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.attribution a {
+  text-decoration: underline;
+  color: hsl(228, 45%, 44%);
+}
+
+/* Queries */
+
+@media (min-width: 840px) {
+  .wrapper {
+    margin-block: 9rem;
+    margin-inline: 30rem;
+  }
+
+  .logo {
+    width: 8.5rem;
+  }
+
+  .subtitle {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    font-size: 4.8rem;
+  }
+
+  .subscribe {
+    font-size: 2rem;
+  }
+
+  .email__container {
+    margin-top: 4rem;
+    margin-bottom: 7.4rem;
+
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  .email__input {
+    width: 43rem;
+    height: 2rem;
+
+    padding: 2.8rem;
+
+    font-size: 1.8rem;
+  }
+
+  .email__input::placeholder {
+    font-size: 1.7rem;
+  }
+
+  .email__error {
+    margin-left: 2.5rem;
+
+    font-size: 1.3rem;
+    text-align: left;
+  }
+  .email__btn {
+    width: 22rem;
+    height: 6rem;
+    margin-top: 0;
+
+    font-size: 1.8rem;
+  }
+
+  .illustration {
+    width: 64rem;
+  }
+
+  .social {
+    margin-top: 7.5rem;
+    gap: 1.3rem;
+  }
+
+  .social__facebook,
+  .social__twitter,
+  .social__instagram {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .social__facebook svg {
+    width: 0.8rem;
+  }
+
+  .social__twitter svg {
+    width: 1.4rem;
+  }
+
+  .social__instagram svg {
+    width: 1.4rem;
+  }
+
+  .copyright {
+    margin-top: 2.5rem;
+    font-size: 1.2rem;
+  }
+}
